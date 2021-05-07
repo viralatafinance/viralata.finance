@@ -186,7 +186,7 @@ class Header extends Component {
                           href="https://www.certik.org/projects/viralatafinance"
                         >
                           {t("Auditoria")}                          
-                          <span className="soon-badge">{t("novo")} 🔥</span>
+                          <span className="soon-badge" role="img" aria-label="new">{t("novo")} 🔥</span>
                         </a>
                       </li>
                       <li>
