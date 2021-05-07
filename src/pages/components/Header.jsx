@@ -65,60 +65,32 @@ class Header extends Component {
     for (var i in elements) {
       if (elements.hasOwnProperty(i)) {
         elements[i].onclick = function () {
-          this.parentElement
-            .querySelector(".submenu")
-            .classList.toggle("active");
+          this.parentElement.querySelector(".submenu").classList.toggle("active");
           this.classList.toggle("open");
         };
       }
     }
     const { color = "default-color", hideLogo = false } = this.props;
-    let logoUrl = (
-      <img
-        src="/assets/images/logo/logo.png"
-        alt="Vira-lata Finance"
-        className="header-logo"
-      />
-    );
+    let logoUrl = <img src="/assets/images/logo/logo.png" alt="Vira-lata Finance" className="header-logo" />;
 
     return (
       <Translation>
         {(t) => (
           <>
-            <Modal
-              isOpen={this.state.modalOpen}
-              onRequestClose={() => this.closeModal()}
-              style={customStyles}
-              contentLabel=""
-            >
+            <Modal isOpen={this.state.modalOpen} onRequestClose={() => this.closeModal()} style={customStyles} contentLabel="">
               <div className="modal-buy">
-                <div
-                  className="container position-relative"
-                  style={{ maxWidth: 800 }}
-                >
+                <div className="container position-relative" style={{ maxWidth: 800 }}>
                   <div className="service-wrapper service-white">
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-lg-6 col-md-6 col-sm-6 col-12 col">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={t("ViralataHelp")}
-                        >
+                        <a target="_blank" rel="noopener noreferrer" href={t("ViralataHelp")}>
                           <div className="service service__style--1">
                             <div className="icon">
-                              <img
-                                style={{ width: 60, height: 60 }}
-                                src={`/assets/images/icons/help.svg`}
-                                alt="Viralata Finance"
-                              />
+                              <img style={{ width: 60, height: 60 }} src={`/assets/images/icons/help.svg`} alt="Viralata Finance" />
                             </div>
                             <div className="content">
                               <h4 className="title">{t("Sou novo")}</h4>
-                              <p>
-                                {t(
-                                  "Se você está iniciando no mundo das finanças descentralizadas, clique aqui."
-                                )}
-                              </p>
+                              <p>{t("Se você está iniciando no mundo das finanças descentralizadas, clique aqui.")}</p>
                             </div>
                           </div>
                         </a>
@@ -132,19 +104,11 @@ class Header extends Component {
                         >
                           <div className="service service__style--1">
                             <div className="icon">
-                              <img
-                                style={{ width: 60, height: 60 }}
-                                src={`/assets/images/icons/sunglasses.svg`}
-                                alt="Viralata Finance"
-                              />
+                              <img style={{ width: 60, height: 60 }} src={`/assets/images/icons/sunglasses.svg`} alt="Viralata Finance" />
                             </div>
                             <div className="content">
                               <h4 className="title">{t("Sou experiente")}</h4>
-                              <p>
-                                {t(
-                                  "Ir para o site da PancakeSwap para comprar REAU"
-                                )}
-                              </p>
+                              <p>{t("Ir para o site da PancakeSwap para comprar REAU")}</p>
                             </div>
                           </div>
                         </a>
@@ -158,22 +122,16 @@ class Header extends Component {
                         marginTop: "10px",
                       }}
                     >
-                      {t(
-                        "REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder."
-                      )}
+                      {t("REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder.")}
                     </span>
                   </div>
                 </div>
               </div>
             </Modal>
-            <header
-              className={`header-area formobile-menu header--transparent ${color}`}
-            >
+            <header className={`header-area formobile-menu header--transparent ${color}`}>
               <div className="header-wrapper" id="header-wrapper">
                 <div className="header-left">
-                  <div className="logo">
-                    {!hideLogo && <a href="/">{logoUrl}</a>}
-                  </div>
+                  <div className="logo">{!hideLogo && <a href="/">{logoUrl}</a>}</div>
                 </div>
                 <div className="header-right">
                   <nav className="mainmenunav d-lg-block">
@@ -185,26 +143,19 @@ class Header extends Component {
                           rel="noopener noreferrer"
                           href="https://www.certik.org/projects/viralatafinance"
                         >
-                          {t("Auditoria")}                          
-                          <span className="soon-badge" role="img" aria-label="new">{t("novo")} 🔥</span>
+                          {t("Auditoria")}
+                          <span className="soon-badge" role="img" aria-label="new">
+                            {t("novo")} 🔥
+                          </span>
                         </a>
                       </li>
                       <li>
-                        <a
-                          onClick={this.CLoseMenuTrigger}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={t("WhitepaperLink")}
-                        >
+                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href={t("WhitepaperLink")}>
                           Whitepaper
                         </a>
                       </li>
                       <li>
-                        <HashLink
-                          smooth
-                          to="#roadmap"
-                          onClick={this.CLoseMenuTrigger}
-                        >
+                        <HashLink smooth to="#roadmap" onClick={this.CLoseMenuTrigger}>
                           {t("Planejamento")}
                         </HashLink>
                       </li>
@@ -212,12 +163,7 @@ class Header extends Component {
                         <Link to="#">{t("Siga-nos")}</Link>
                         <ul className="submenu">
                           <li>
-                            <a
-                              onClick={this.CLoseMenuTrigger}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href={t("Telegram")}
-                            >
+                            <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href={t("Telegram")}>
                               Telegram
                             </a>
                           </li>
@@ -324,19 +270,13 @@ class Header extends Component {
                   </div>
                   {/* Start Humberger Menu  */}
                   <div className="humberger-menu d-block d-lg-none pl--20">
-                    <span
-                      onClick={this.menuTrigger}
-                      className="menutrigger text-white"
-                    >
+                    <span onClick={this.menuTrigger} className="menutrigger text-white">
                       <FiMenu />
                     </span>
                   </div>
                   {/* End Humberger Menu  */}
                   <div className="close-menu d-block d-lg-none">
-                    <span
-                      onClick={this.CLoseMenuTrigger}
-                      className="closeTrigger"
-                    >
+                    <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
                       <FiX />
                     </span>
                   </div>
