@@ -111,12 +111,12 @@ class Roadmap extends Component {
                             </span>
                             <br />
                             <span>
-                              <ArrowIcon />
+                              <CheckIcon />
                               {t("Auditoria(s) completas")}
                             </span>
                             <br />
                             <span>
-                              <ArrowIcon />
+                              <CheckIcon />
                               {t(
                                 "Listagem em rankings de moedas (CMC, CG e etc)"
                               )}

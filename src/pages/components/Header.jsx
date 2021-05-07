@@ -183,10 +183,10 @@ class Header extends Component {
                           onClick={this.CLoseMenuTrigger}
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="/#"
+                          href="https://www.certik.org/projects/viralatafinance"
                         >
-                          {t("Auditoria")}
-                          <span className="soon-badge"> {t("em breve")}</span>
+                          {t("Auditoria")}                          
+                          <span className="soon-badge">{t("novo")} 🔥</span>
                         </a>
                       </li>
                       <li>

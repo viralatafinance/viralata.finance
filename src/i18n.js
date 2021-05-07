@@ -163,6 +163,7 @@ i18n.use(LanguageDetector).init({
           "A página que você está procurando não existe.",
         "Voltar para página inicial": "Voltar para página inicial",
         ViralataHelp: "https://t.me/viralatahelp",
+        novo: 'novo'
       },
     },
     en: {
@@ -204,7 +205,7 @@ i18n.use(LanguageDetector).init({
           "All holders receive passive income due to the reflection token system.",
         "2% de cada transação é distribuído para quem tem REAU na carteira (de preferência REAUPay), incluindo a carteira morta (mecanismo deflacionário).":
           "2% of each transaction is distributed to whoever has REAU in their wallet (preferentially REAUPay), including the dead wallet (deflationary mechanism).",
-        Seguro: "Safu",
+        Seguro: "Safe",
         "A liquidez inicial do contrato foi queimada junto com metade dos tokens. O que isso significa? O REAU sempre terá um valor mínimo.":
           "The initial liquidity of the contract was burned along with half the tokens. What does it mean? REAU will always have a minimum value.",
         "Vira-Lata Finance ($REAU) é um projeto de código aberto descentralizado, criado para incluir os Brasileiros ao mundo das criptomoedas, prover sistemas financeiros de maneira segura, de fácil uso e com ações destinadas à caridade.":
@@ -298,6 +299,7 @@ i18n.use(LanguageDetector).init({
           "The page you are looking for does not exist.",
         "Voltar para página inicial": "Go back to home page",
         ViralataHelp: "https://t.me/reau_infobot",
+        novo: 'new'
       },
     },
     es: {
@@ -432,6 +434,7 @@ i18n.use(LanguageDetector).init({
           "la página que está buscando no existe",
         "Voltar para página inicial": "Volver al menu principal",
         ViralataHelp: "https://t.me/reau_infobot",
+        novo: 'nuevo'
       },
     },
   },
