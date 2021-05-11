@@ -100,7 +100,7 @@ class Header extends Component {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x4c79b8c9cB0BD62B047880603a9DEcf36dE28344"
+                          href="https://exchange.viralata.finance"
                         >
                           <div className="service service__style--1">
                             <div className="icon">
