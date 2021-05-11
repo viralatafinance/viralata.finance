@@ -42,7 +42,7 @@ i18n.use(LanguageDetector).init({
           "Se você está iniciando no mundo das finanças descentralizadas, clique aqui.",
         "Sou experiente": "Sou experiente",
         "Ir para o site da PancakeSwap para comprar REAU":
-          "Ir para o site da PancakeSwap para comprar REAU",
+          "Clique aqui para comprar REAU",
         "REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder.":
           "REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder.",
         descentralizados: "descentralizados",
@@ -179,7 +179,7 @@ i18n.use(LanguageDetector).init({
           "If this is your first experience with decentralized finance, click here.",
         "Sou experiente": "I’m an expert",
         "Ir para o site da PancakeSwap para comprar REAU":
-          "Go to PancakeSwap to swap REAU",
+          "Click here to swap REAU",
         "REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder.":
           "REAU is a risky and volatile investment. Do not risk anything that you are not willing to lose.",
         descentralizados: "decentralized",
@@ -315,7 +315,7 @@ i18n.use(LanguageDetector).init({
           "Si te estás iniciando en el mundo de las finanzas descentralizadas, hacé click aquí.",
         "Sou experiente": "Soy Experto",
         "Ir para o site da PancakeSwap para comprar REAU":
-          "Ir al sitio de PancakeSwap para comprar REAU",
+          "Haga clic aquí para comprar REAU",
         "REAU é um investimento volátil e de alto risco. Não arrisque nada que você não esteja disposto a perder.":
           "REAU es una inversión volátil de alto riesgo. No arriesgues nada que no estés dispuesto a perder.",
         descentralizados: "descentralizado",
