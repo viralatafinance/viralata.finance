@@ -77,13 +77,7 @@ class Hero extends Component {
             <span className="theme-color" style={{ marginRight: 5 }}>
               REAU
             </span>
-            <Translation>
-              {(t) =>
-                t(
-                  "é um token descentralizado com uma economia deflacionária, introduzindo os Brasileiros ao mundo das criptomoedas."
-                )
-              }
-            </Translation>
+            <Translation>{(t) => t("é um token descentralizado com uma economia deflacionária, introduzindo os Brasileiros ao mundo das criptomoedas.")}</Translation>
           </span>
         ),
       },
@@ -96,13 +90,7 @@ class Hero extends Component {
             <span className="theme-color" style={{ marginRight: 5 }}>
               REAUPay{" "}
             </span>
-            <Translation>
-              {(t) =>
-                t(
-                  `é uma carteira "tudo em um" que funciona na Binance Smart Chain facilitando o uso do REAU.`
-                )
-              }
-            </Translation>
+            <Translation>{(t) => t(`é uma carteira "tudo em um" que funciona na Binance Smart Chain facilitando o uso do REAU.`)}</Translation>
           </span>
         ),
       },
@@ -112,13 +100,7 @@ class Hero extends Component {
         section: "roadmap",
         description: (
           <span>
-            <Translation>
-              {(t) =>
-                t(
-                  "Nosso planejamento inclui um inovador mercado para NFT, poupança com incentivos à caridade, governança da comunidade, e mais."
-                )
-              }
-            </Translation>{" "}
+            <Translation>{(t) => t("Nosso planejamento inclui um inovador mercado para NFT, poupança com incentivos à caridade, governança da comunidade, e mais.")}</Translation>{" "}
             <a className="theme-color" href="#roadmap">
               <Translation>{(t) => t("Confira!")}</Translation>
             </a>
@@ -131,19 +113,12 @@ class Hero extends Component {
       <Translation>
         {(t, i18next) => (
           <div className="slider-activation">
-            <div
-              className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1"
-              data-black-overlay="6"
-            >
+            <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1" data-black-overlay="6">
               <div className="container position-relative">
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="inner">
-                      <img
-                        src="/assets/images/logo/logo.png"
-                        alt="Vira-lata Finance"
-                        className="hero-logo"
-                      />
+                      <img src="/assets/images/logo/logo.png" alt="Vira-lata Finance" className="hero-logo" />
                       <h1 className="title hero-title">
                         {i18next.lng === "en" ? (
                           <>
@@ -151,10 +126,7 @@ class Hero extends Component {
                             <br />
                             <TextLoop>
                               {terms.map((term) => (
-                                <span
-                                  className="theme-color"
-                                  stlye={{ maxWidth: "100%" }}
-                                >
+                                <span className="theme-color" stlye={{ maxWidth: "100%" }}>
                                   {term}
                                 </span>
                               ))}
@@ -170,10 +142,7 @@ class Hero extends Component {
                             <br />
                             <TextLoop>
                               {terms.map((term) => (
-                                <span
-                                  className="theme-color"
-                                  stlye={{ maxWidth: "100%" }}
-                                >
+                                <span className="theme-color" stlye={{ maxWidth: "100%" }}>
                                   {term}
                                 </span>
                               ))}
@@ -187,17 +156,10 @@ class Hero extends Component {
                 <div className="service-wrapper service-white">
                   <div className="row">
                     {ServiceList.map((val, i) => (
-                      <div
-                        className="col-lg-4 col-md-6 col-sm-6 col-12"
-                        key={i}
-                      >
+                      <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
                         <div className="service service__style--1">
                           <div className="icon">
-                            <img
-                              style={{ width: 60, height: 60 }}
-                              src={`/assets/images/icons/icon-${val.icon}.png`}
-                              alt="Viralata Finance"
-                            />
+                            <img style={{ width: 60, height: 60 }} src={`/assets/images/icons/icon-${val.icon}.png`} alt="Viralata Finance" />
                           </div>
                           <div className="content">
                             <h4 className="title">{val.title}</h4>
@@ -207,8 +169,7 @@ class Hero extends Component {
                       </div>
                     ))}
                   </div>
-                </div>
-                <div className="stats-box"></div>
+                </div>             
               </div>
             </div>
           </div>

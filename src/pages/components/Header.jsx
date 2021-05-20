@@ -97,11 +97,7 @@ class Header extends Component {
                       </div>
 
                       <div className="col-lg-6 col-md-6 col-sm-6 col-12 col">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://exchange.viralata.finance"
-                        >
+                        <a target="_blank" rel="noopener noreferrer" href="https://exchange.viralata.finance">
                           <div className="service service__style--1">
                             <div className="icon">
                               <img style={{ width: 60, height: 60 }} src={`/assets/images/icons/sunglasses.svg`} alt="Viralata Finance" />
@@ -137,17 +133,17 @@ class Header extends Component {
                   <nav className="mainmenunav d-lg-block">
                     <ul className="mainmenu">
                       <li>
-                        <a
-                          onClick={this.CLoseMenuTrigger}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href="https://www.certik.org/projects/viralatafinance"
-                        >
+                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.certik.org/projects/viralatafinance">
                           {t("Auditoria")}
+                        </a>
+                      </li>
+                      <li>
+                        <HashLink smooth to="#charity-fund" onClick={this.CLoseMenuTrigger}>
+                          {t("Fundo de caridade")}
                           <span className="soon-badge" role="img" aria-label="new">
                             {t("novo")} 🔥
                           </span>
-                        </a>
+                        </HashLink>
                       </li>
                       <li>
                         <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href={t("WhitepaperLink")}>
@@ -168,42 +164,22 @@ class Header extends Component {
                             </a>
                           </li>
                           <li>
-                            <a
-                              onClick={this.CLoseMenuTrigger}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href="https://www.facebook.com/br.viralata.finance"
-                            >
+                            <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/br.viralata.finance">
                               Facebook
                             </a>
                           </li>
                           <li>
-                            <a
-                              onClick={this.CLoseMenuTrigger}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href="https://www.instagram.com/viralatafinance"
-                            >
+                            <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/viralatafinance">
                               Instagram
                             </a>
                           </li>
                           <li>
-                            <a
-                              onClick={this.CLoseMenuTrigger}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href="https://www.twitter.com/viralatafinance"
-                            >
+                            <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/viralatafinance">
                               Twitter
                             </a>
                           </li>
                           <li>
-                            <a
-                              onClick={this.CLoseMenuTrigger}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href="https://www.reddit.com/r/viralatafinance"
-                            >
+                            <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/viralatafinance">
                               Reddit
                             </a>
                           </li>

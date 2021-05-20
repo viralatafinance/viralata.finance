@@ -9,6 +9,7 @@ import REAU from "./components/REAU";
 import REAUPay from "./components/REAUPay";
 import Roadmap from "./components/Roadmap";
 import Testimonial from "./components/Testimonial";
+import CharityFund from "./components/CharityFund";
 import Footer from "./components/Footer";
 import Helmet from "./components/Helmet";
 
@@ -55,8 +56,15 @@ class Main extends Component {
             <Roadmap />
           </div>
         </section>
+        
+        <section id="charity-fund" className="rn-testimonial-area ptb--120">
+          <div className="container">
+            <CharityFund />
+          </div>
+        </section>
 
-        <section id="testimonials" className="rn-testimonial-area ptb--120">
+
+        <section id="testimonials" className="bg_color--1 rn-testimonial-area ptb--120">
           <div className="container">
             <Testimonial />
           </div>
