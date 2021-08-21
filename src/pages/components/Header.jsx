@@ -134,7 +134,7 @@ class Header extends Component {
                     <ul className="mainmenu">
                       <li>
                         <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://app.viralata.finance">
-                          {t("Entrar no App")}                         
+                          {t("ViralataSwap")}                         
                         </a>
                       </li>
                       <li>
