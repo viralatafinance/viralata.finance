@@ -97,7 +97,7 @@ class Header extends Component {
                       </div>
 
                       <div className="col-lg-6 col-md-6 col-sm-6 col-12 col">
-                        <a target="_blank" rel="noopener noreferrer" href="https://exchange.viralata.finance">
+                        <a target="_blank" rel="noopener noreferrer" href="https://app.viralata.finance">
                           <div className="service service__style--1">
                             <div className="icon">
                               <img style={{ width: 60, height: 60 }} src={`/assets/images/icons/sunglasses.svg`} alt="Viralata Finance" />
