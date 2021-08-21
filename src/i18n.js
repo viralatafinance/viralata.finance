@@ -162,6 +162,7 @@ i18n.use(LanguageDetector).init({
           "Estímulo ao crescimento - a ideia final é que somente os rendimentos do fundo sejam usados para doações, de forma estimular o seu crescimento progressivo e ajudar cada vez mais ONGs;",
         "Saiba mais clicando aqui.": "Saiba mais clicando aqui.",
         "Fundo de caridade": "Fundo de caridade",
+        "Entrar no App": "Entrar no App"
       },
     },
     en: {
@@ -295,6 +296,7 @@ i18n.use(LanguageDetector).init({
           "Stimulating growth - the final idea is that only the proceeds of the fund are used for donations, in order to stimulate its progressive growth and help more and more NGOs;",
         "Saiba mais clicando aqui.": "Read more about it by clicking here.",
         "Fundo de caridade": "Charity Fund",
+        "Entrar no App": "Enter App"
       },
     },
     es: {
@@ -411,7 +413,8 @@ i18n.use(LanguageDetector).init({
         "A página que você está procurando não existe.": "la página que está buscando no existe",
         "Voltar para página inicial": "Volver al menu principal",
         ViralataHelp: "https://t.me/reau_infobot",
-        novo: "nuevo",
+        novo: "nuevo",        
+        "Entrar no App": "Enter App"
       },
     },
   },

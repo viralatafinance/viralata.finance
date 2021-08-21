@@ -133,23 +133,20 @@ class Header extends Component {
                   <nav className="mainmenunav d-lg-block">
                     <ul className="mainmenu">
                       <li>
-                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://www.certik.org/projects/viralatafinance">
-                          {t("Auditoria")}
+                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://app.viralata.finance">
+                          {t("Entrar no App")}                         
+                        </a>
+                      </li>
+                      <li>
+                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href="https://docs.viralata.finance">
+                          {t("Docs")}                         
                         </a>
                       </li>
                       <li>
                         <HashLink smooth to="#charity-fund" onClick={this.CLoseMenuTrigger}>
-                          {t("Fundo de caridade")}
-                          <span className="soon-badge" role="img" aria-label="new">
-                            {t("novo")} 🔥
-                          </span>
+                          {t("Fundo de caridade")}                       
                         </HashLink>
-                      </li>
-                      <li>
-                        <a onClick={this.CLoseMenuTrigger} target="_blank" rel="noopener noreferrer" href={t("WhitepaperLink")}>
-                          Whitepaper
-                        </a>
-                      </li>
+                      </li>                     
                       <li>
                         <HashLink smooth to="#roadmap" onClick={this.CLoseMenuTrigger}>
                           {t("Planejamento")}
