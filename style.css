@@ -66,7 +66,7 @@ img {
 
 
 .logo {
-    padding: clamp(4.8rem, 25vw, 5rem) 0 calc(2rem + 4vw) 0;
+    padding: clamp(4.8rem, 25vw, 5rem) 0 4rem 0;
     width: clamp(15rem, 70vw, calc(33rem - 9vw));
     margin: 0 auto;
     display: block;
