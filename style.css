@@ -802,7 +802,7 @@ menu {
     } .underdog_sec article h3 {
         font-size: clamp(1.2rem, 1.3vw, 1.4rem);
         line-height: clamp(1.6rem, 2.3vw, 2rem);
-        width: clamp(31rem, 60vw, 38rem);
+        width: clamp(31rem, 60vw, 42rem);
     } .underdog_sec article img {
         will-change: transform;
         /* transition:transform 1s ease-out; */
