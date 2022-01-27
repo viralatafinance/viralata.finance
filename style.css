@@ -66,7 +66,7 @@ img {
 
 
 .logo {
-    padding: clamp(4.8rem, 25vw, 6rem) 0 calc(3rem + 4vw) 0;
+    padding: clamp(4.8rem, 25vw, 5rem) 0 4rem 0;
     width: clamp(15rem, 70vw, calc(33rem - 9vw));
     margin: 0 auto;
     display: block;
@@ -200,6 +200,7 @@ h1 {
     height: 110%;
     background-image: linear-gradient(20deg, #04fff8,#ff8400);
     background-attachment: fixed;
+    transform: translate3d(0,0,0);
 }
 
 .underdog_sec article {
@@ -278,6 +279,7 @@ h1 {
     background-position: bottom;
     height: 11rem;
     box-shadow: inset 5rem 0 7rem -3rem var(--c4);
+    transform: translate3d(0,0,0);
 } .web3_sec div img {
     position: absolute;
     bottom: 0;
@@ -366,7 +368,7 @@ h1 {
     display: block;
     margin: 0 auto;
     width: clamp(17rem, 80vw, 60rem);
-    filter: drop-shadow(0 0 20px #565);
+    filter: drop-shadow(0 0 1.5vw #565);
 }
 
 
@@ -654,6 +656,102 @@ footer .social {
 } .not_first_event .event_dot {
     display:none;
 }
+
+
+.menu_ctnr {
+    position: fixed;
+    bottom: clamp(2rem, 5vw, 4rem);
+    right: clamp(2rem, 5vw, 4rem);
+    z-index: 999;
+}
+
+.menu_bt {
+    width: clamp(4rem, 5vw, 4.5rem);
+    height: clamp(4rem, 5vw, 4.5rem);
+    border: none;
+    background: var(--c1);
+    border-radius: 10rem;
+    cursor: pointer;
+    border: 3px solid var( --c3);
+    box-shadow: 0 0.4rem 2rem -0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    transform:translateY(10rem) rotate(230deg);
+}
+
+menu {
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    visibility: hidden;
+} menu a {
+    padding: 0.5rem 1.2rem;
+    display: inline-block;
+    background: var(--c2);
+    margin: 0.4rem 0;
+    color: var(--c1);
+    border-radius: 10rem;
+    border: 3px solid var(--c3);
+    box-shadow: 0 0.8rem 1rem -0.9rem var(--c1);
+    font-weight: 900;
+    transition: transform 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
+    opacity:0;
+    visibility: hidden;
+    transform:translate(0.6rem, 0.4rem) scale(0.9);
+    transform-origin: bottom right;
+} menu img {
+    width: 1.3rem;
+    margin-right: 0.5rem;
+} menu a:hover {
+    transition: transform 0.05s ease;
+    transform:translate(0, 0) scale(1.03) !important;
+} .showingbts {
+    opacity:1;
+    visibility: visible;
+    transform:translate(0, 0) scale(1);
+} .no_delay {
+    transition-delay: 0s !important;
+}
+
+.menu_bt svg {
+    width: clamp(2rem, 2.5vw, 2.5rem);
+    position: absolute;
+} .bone01, .bone02 {
+    transition:transform 0.3s ease;
+} .bone02 {
+
+} .menu_bt:active {
+    outline: none;
+    transition: transform 0.05s ease;
+    transform:scale(0.9) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
