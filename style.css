@@ -470,9 +470,9 @@ img {
     justify-content: space-between;
 } .products_list li {
     
-} .products_list h2 {
+} .products_list h3 {
     font-size: clamp(1.5rem, 6.5vw, 1.8rem);
-} .products_list h2 div {
+} .products_list h3 div {
     font-size: clamp(1.2rem, 6.5vw, 1.5rem);
     display: inline;
     color: var(--c4);
@@ -735,9 +735,6 @@ menu {
     transition: transform 0.05s ease;
     transform:scale(0.9) !important;
 }
-
-
-
 
 
 
