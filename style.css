@@ -1,8 +1,8 @@
-body, h1, .underdog_sec article h2, .underdog_sec article h3, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
+body, h1, .underdog_sec article h1, .underdog_sec article h2, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
     visibility: hidden;
 }
 
-html, body, p, h1, h2, h3, h4, h5, h6 {
+html, body, p, h1, h1, h2, h4, h5, h6 {
     margin:0;
     cursor:default;
 }
@@ -172,7 +172,7 @@ img {
     }
 }
 
-h1 {
+.intro_title {
     width: clamp(17rem, 80vw, 34rem);
     font-size: clamp(2.6rem, 12vw, 4.6rem);
     line-height: clamp(3.1rem, 15vw, 5.5rem);
@@ -180,12 +180,12 @@ h1 {
     display: block;
     hyphens: manual;
     overflow: hidden;
-} h1 b {
+} .intro_title b {
     font-weight: 100;
     text-decoration: underline;
     text-decoration-thickness: from-font;
     text-underline-offset: 0.3rem;
-} h1 strong, .underdog_sec strong, .web3_sec strong, .how_sec strong {
+} .intro_title strong, .underdog_sec strong, .web3_sec strong, .how_sec strong {
     color: var(--c3);
 }
 
@@ -224,10 +224,10 @@ h1 {
     max-width: 50rem;
     padding: calc(1.5rem + 4vw);
     font-size: 1.5rem;
-} .underdog_sec article h2 {
+} .underdog_sec article h1 {
     font-size: clamp(1.7rem, 8vw, 2.2rem);
     margin-bottom: 2rem;
-} .underdog_sec article h3 {
+} .underdog_sec article h2 {
     font-size: clamp(1rem, 8vw, 1.3rem);
     font-weight: 400;
 }
@@ -470,9 +470,9 @@ h1 {
     justify-content: space-between;
 } .products_list li {
     
-} .products_list h3 {
+} .products_list h2 {
     font-size: clamp(1.5rem, 6.5vw, 1.8rem);
-} .products_list h3 div {
+} .products_list h2 div {
     font-size: clamp(1.2rem, 6.5vw, 1.5rem);
     display: inline;
     color: var(--c4);
@@ -493,6 +493,7 @@ h1 {
     font-weight: 600;
     font-size: 0.95rem;
     user-select: none;
+    border-radius: 0.3rem;
 } .soon_a {
     opacity: 0.4;
 } .products_list a span {
@@ -780,7 +781,7 @@ menu {
         margin: 0;
     }
 
-    h1 {
+    .intro_title {
         width: clamp(17rem, 38vw, 38rem);
         font-size: clamp(2.4rem, 5vw, 5rem);
         line-height: clamp(3.1rem, 5.5vw, 5.5rem);
@@ -796,10 +797,10 @@ menu {
     }
     
 
-    .underdog_sec article h2 {
+    .underdog_sec article h1 {
         font-size: clamp(2.6rem, 4.5vw, 3.3rem);
         max-width: 47rem;
-    } .underdog_sec article h3 {
+    } .underdog_sec article h2 {
         font-size: clamp(1.2rem, 1.3vw, 1.4rem);
         line-height: clamp(1.6rem, 2.3vw, 2rem);
         width: clamp(31rem, 60vw, 42rem);
