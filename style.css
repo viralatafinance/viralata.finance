@@ -1,4 +1,4 @@
-body, h1, .underdog_sec article h1, .underdog_sec article h2, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
+h1, .underdog_sec article h1, .underdog_sec article h2, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
     visibility: hidden;
 }
 
@@ -30,9 +30,10 @@ a {
     color:unset;
 }
 
-img {
+img, picture {
     max-width: 100%;
     user-select: none;
+    display:block;
 }
 
 ::-webkit-scrollbar {
@@ -208,7 +209,7 @@ img {
     display: block;
     height: 50rem;
     position: relative;
-} .underdog_sec article img {
+} .underdog_sec article picture {
     position: absolute;
     z-index: -1;
     top: -5%;
@@ -481,7 +482,7 @@ img {
     line-height: clamp(1.6rem, 5vw, 1.9rem);
     margin-top: 0.7rem;
     font-weight: 400;
-} .products_list img {
+} .open_arms_doggo {
     margin: 4rem auto 0 auto;
     display: block;
     width: clamp(18rem, 90vw, 58rem);
@@ -523,7 +524,7 @@ img {
     width: clamp(17rem, 80vw, 42rem);
     margin: 3rem auto;
     font-family: 'Lato';
-} .blog_section img {
+} .blog_section picture {
     margin-bottom: 1rem;
     border-radius: 0.4rem;
 } .blog_section h5 {
@@ -531,7 +532,7 @@ img {
     line-height: clamp(2rem, 9vw, 2.7rem);
     margin-bottom: 2rem;
     letter-spacing: 1px;
-} .blog_section img:hover {
+} .blog_section picture:hover {
     filter:brightness(1.1)
 }  .blog_section p {
     font-size: clamp(1rem, 5vw, 1.2rem);
@@ -801,7 +802,7 @@ menu {
         font-size: clamp(1.2rem, 1.3vw, 1.4rem);
         line-height: clamp(1.6rem, 2.3vw, 2rem);
         width: clamp(31rem, 60vw, 42rem);
-    } .underdog_sec article img {
+    } .underdog_sec article picture {
         will-change: transform;
         /* transition:transform 1s ease-out; */
     } 
