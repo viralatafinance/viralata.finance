@@ -216,6 +216,9 @@ img, picture {
     left: 2vw;
     height: 100%;
     object-fit: cover;
+} .underdog_sec article img {
+    height: 100%;
+    object-fit: cover;
 } .underdog_sec div {
     background-color: var(--c4);
     position: absolute;
