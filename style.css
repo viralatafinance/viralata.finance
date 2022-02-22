@@ -75,7 +75,7 @@ img, picture {
 
 .top_menu {
     top: clamp(1rem, 6vw, 7rem);
-    width: clamp(17rem, 80vw, 90rem);
+    width: clamp(13rem, 80vw, 90rem);
     position: absolute;
     margin: 0 auto;
     left: 0;
@@ -105,13 +105,13 @@ img, picture {
 
 
 .intro_sec {
-    width: clamp(17rem, 80vw, 90rem);
+    width: clamp(13rem, 80vw, 90rem);
     display: flex;
     flex-direction: column;
     margin: 0 auto 5rem auto;
     justify-content: left;
 } .intro_sec svg {
-    width: clamp(17rem, 80vw, 34rem);
+    width: clamp(13rem, 80vw, 34rem);
     filter: drop-shadow(0 0 0.8rem #233f50);
     margin: 0 auto;
 } .intro_sec a {
@@ -174,9 +174,9 @@ img, picture {
 }
 
 .intro_title {
-    width: clamp(17rem, 80vw, 34rem);
-    font-size: clamp(2.6rem, 12vw, 4.6rem);
-    line-height: clamp(3.1rem, 15vw, 5.5rem);
+    width: clamp(13rem, 80vw, 34rem);
+    font-size: clamp(2rem, 12vw, 4.6rem);
+    line-height: clamp(2.8rem, 15vw, 5.5rem);
     margin: 3rem auto 0 auto;
     display: block;
     hyphens: manual;
@@ -232,7 +232,7 @@ img, picture {
     font-size: clamp(1.7rem, 8vw, 2.2rem);
     margin-bottom: 2rem;
 } .underdog_sec article h2 {
-    font-size: clamp(1rem, 8vw, 1.3rem);
+    font-size: clamp(1rem, 7vw, 1.3rem);
     font-weight: 400;
 }
 
@@ -251,14 +251,14 @@ img, picture {
     user-select: none;
 } .why_sec article {
     background-color: var(--c1);
-    width: clamp(17rem, 90vw, 70rem);
+    width: clamp(13rem, 90vw, 70rem);
     margin: 0 auto;
-    padding: 2rem;
+    padding: clamp(1rem, 8vw, 2rem);
     box-sizing: border-box;
     position: relative;
     top: clamp(-19rem, -40vw, -10rem);
     border-radius: clamp(0.2rem, 4vw, 2rem);
-    margin-bottom: clamp(-17rem, -40vw, -10rem);
+    margin-bottom: clamp(-13rem, -40vw, -10rem);
 } .why_sec div {
 
 } .why_sec p {
@@ -293,7 +293,7 @@ img, picture {
     left: 0;
     right: 0;
 } .web3_sec article {
-    width: clamp(17rem, 82vw, 42rem);
+    width: clamp(13rem, 82vw, 42rem);
     margin: 0 auto;
     padding: 9rem 0rem 4rem 0rem;
     font-size: clamp(1.1rem, 2.2vw, 1.8rem);
@@ -311,7 +311,7 @@ img, picture {
 .how_sec {
 
 } .how_sec article {
-    width: clamp(17rem, 90vw, 70rem);
+    width: clamp(13rem, 90vw, 70rem);
     background: black;
     margin: 0 auto;
     border-radius: 1.5rem;
@@ -334,11 +334,11 @@ img, picture {
 }
 
 .how_title {
-    width: clamp(17rem, 80vw, 34rem);
+    width: clamp(13rem, 80vw, 34rem);
     margin: 4rem auto;
     color: var(--c3);
 } .how_title span {
-    font-size: clamp(5.5rem, 26vw, 12rem);
+    font-size: clamp(4.5rem, 26vw, 12rem);
     font-weight: 900;
 }.how_title div {
     position: relative;
@@ -357,7 +357,7 @@ img, picture {
     background: var(--c3);
     transform: translateY(-50%);
 } .how_sec div p {
-    width: clamp(17rem, 82vw, 34rem);
+    width: clamp(13rem, 82vw, 34rem);
     margin: 0 auto 1rem auto;
     font-size: clamp(1rem, 5vw, 1.15rem);
     line-height: clamp(1.6rem, 5vw, 1.9rem);
@@ -371,14 +371,14 @@ img, picture {
 .what_dog {
     display: block;
     margin: 0 auto;
-    width: clamp(17rem, 80vw, 60rem);
+    width: clamp(14rem, 80vw, 60rem);
     filter: drop-shadow(0 0 1.5vw #565);
 }
 
 
 .commitment {
     margin: 2rem auto 3rem auto;
-    width: clamp(17rem, 80vw, 70rem);
+    width: clamp(14rem, 80vw, 70rem);
 } .commitment h4 {
     font-size: clamp(1.5rem, 6.5vw, 1.8rem);
     min-width: 22vw;
@@ -412,7 +412,7 @@ img, picture {
     color:var(--c1);
     overflow: hidden;
 } .products_sec article {  
-    width: clamp(17rem, 80vw, 28rem);
+    width: clamp(15rem, 80vw, 28rem);
     min-height: 62rem;
     margin: 0 auto;
     position: relative;
@@ -421,7 +421,7 @@ img, picture {
 } .products_sec span {
 
 } .products_sec h6 {
-    font-size: clamp(6rem, 32vw, 11rem);
+    font-size: clamp(5rem, 30vw, 11rem);
     position: absolute;
     left: 1rem;
     transform: rotate(-90deg);
@@ -432,8 +432,8 @@ img, picture {
     position: absolute;
     right: 0;
     top: 4rem;
-    width: clamp(10rem, 42vw, 16rem);
-    font-size: clamp(1rem, 4.6vw, 1.3rem);
+    width: clamp(8.6rem, 42vw, 16rem);
+    font-size: clamp(0.9rem, 4.6vw, 1.3rem);
     z-index: 2;
 } .products_sec article img {
     position: absolute;
@@ -446,8 +446,8 @@ img, picture {
 } .products_sec h6::after {
     content: '';
     position: absolute;
-    width: 11rem;
-    height: 0.9rem;
+    width: clamp(7rem, 60vw, 12rem);
+    height: clamp(0.4rem, 3vw, 0.9rem);
     background: var(--c1);
     display: block;
     left: 0.6rem;
@@ -470,7 +470,7 @@ img, picture {
     justify-content: center;
     grid-template-columns: 1fr;
     padding: 0;
-    width: clamp(17rem, 77vw, 52rem);
+    width: clamp(13rem, 77vw, 52rem);
     justify-content: space-between;
 } .products_list li {
     
@@ -481,8 +481,8 @@ img, picture {
     display: inline;
     color: var(--c4);
 }  .products_list h4 {
-    font-size: clamp(1rem, 4.3vw, 1.2rem);
-    line-height: clamp(1.6rem, 5vw, 1.9rem);
+    font-size: clamp(1rem, 4.3vw, 1.1rem);
+    line-height: clamp(1.6rem, 5vw, 1.8rem);
     margin-top: 0.7rem;
     font-weight: 400;
 } .open_arms_doggo {
@@ -512,10 +512,6 @@ img, picture {
 }
 
 
-.dark_bg {
-    background-color:var(--c4);
-}
-
 .blog_section {
     background-color: var(--c4);
     background-image: linear-gradient(var(--c4), black);
@@ -524,7 +520,7 @@ img, picture {
     font-size: clamp(2.6rem, 12vw, 4rem);
     text-align: center;
 } .blog_section article {
-    width: clamp(17rem, 80vw, 42rem);
+    width: clamp(13rem, 80vw, 42rem);
     margin: 3rem auto;
     font-family: 'Lato';
 } .blog_section picture {
@@ -538,7 +534,7 @@ img, picture {
 } .blog_section picture:hover {
     filter:brightness(1.1)
 }  .blog_section p {
-    font-size: clamp(1rem, 5vw, 1.2rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     line-height: clamp(1.6rem, 5vw, 1.9rem);
     text-align: justify;
     font-weight: 100;
@@ -564,7 +560,7 @@ footer .social {
 .back_top {
     text-align: center;
     display: block;
-    background: #223;
+    background: var(--c1);
     padding: 0.8rem 0;
 }
 
@@ -605,7 +601,8 @@ menu {
     align-items: flex-end;
     visibility: hidden;
 } menu a {
-    padding: 0.5rem 1.2rem;
+    font-size: clamp(0.8rem, 4.8vw, 0.9rem);
+    padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
     display: inline-block;
     background: var(--c2);
     margin: 0.4rem 0;
@@ -615,9 +612,9 @@ menu {
     box-shadow: 0 0.8rem 1rem -0.9rem var(--c1);
     font-weight: 900;
     transition: transform 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
-    opacity:0;
+    opacity: 0;
     visibility: hidden;
-    transform:translate(0.6rem, 0.4rem) scale(0.9);
+    transform: translate(0.6rem, 0.4rem) scale(0.9);
     transform-origin: bottom right;
 } menu img {
     width: 1.3rem;
@@ -689,7 +686,7 @@ menu {
     }
 
     .intro_title {
-        width: clamp(17rem, 38vw, 38rem);
+        width: clamp(13rem, 38vw, 38rem);
         font-size: clamp(2.4rem, 5vw, 5rem);
         line-height: clamp(3.1rem, 5.5vw, 5.5rem);
         padding: 2rem 0;
@@ -745,7 +742,7 @@ menu {
         display: flex;
         flex-direction: row-reverse;
     } .web3_sec article {
-        width: clamp(17rem, 42vw, 32rem);
+        width: clamp(13rem, 42vw, 32rem);
         font-weight: 900;
         margin-bottom: 14rem;
     } .web3_sec div {
@@ -768,7 +765,7 @@ menu {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: clamp(17rem, 80vw, 70rem);
+        width: clamp(13rem, 80vw, 70rem);
     } .how_sec article img {
         margin: 2rem 0;
     } .how_sec article p {
@@ -776,7 +773,7 @@ menu {
         width: clamp(14rem, 75vw, 23rem);
         margin: unset;
     } .how_sec div p {
-        width: clamp(17rem, 82vw, 24rem);
+        width: clamp(13rem, 82vw, 24rem);
     }
 
     .how_title {
