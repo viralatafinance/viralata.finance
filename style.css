@@ -65,12 +65,14 @@ img, picture {
 
 
 
-
-.logo {
+.logo_anchor {
     padding: clamp(3.8rem, 20vw, 7rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
     width: clamp(15rem, 75vw, calc(33rem - 9vw));
     margin: 0 auto;
     display: block;
+}
+.logo {
+    width: 100%;
 }
 
 .top_menu {
@@ -339,7 +341,7 @@ img, picture {
 
 .how_title {
     width: clamp(13rem, 80vw, 34rem);
-    margin: 4rem auto;
+    margin: 4rem auto 2rem;
     color: var(--c3);
 } .how_title span {
     font-size: clamp(4.5rem, 26vw, 12rem);
@@ -363,18 +365,18 @@ img, picture {
 } .how_sec div p {
     width: clamp(13rem, 82vw, 34rem);
     margin: 0 auto 1rem auto;
-    font-size: clamp(1rem, 5vw, 1.15rem);
-    line-height: clamp(1.6rem, 5vw, 1.9rem);
+    font-size: clamp(0.85rem, 4.2vw, 1.15rem);
+    line-height: clamp(1.4rem, 7vw, 1.8rem);
     font-family: 'Lato';
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
 } .how_text {
 
 }
 
 .what_dog {
     display: block;
-    margin: 0 auto;
+    margin: 3rem auto 2rem;
     width: clamp(14rem, 80vw, 60rem);
     filter: drop-shadow(0 0 1.5vw #565);
 }
@@ -616,7 +618,7 @@ menu {
     flex-direction: column;
     align-items: flex-end;
     visibility: hidden;
-    gap: 1.1rem;
+    gap: clamp(0.8rem, 3.5vw, 1rem);
 } menu a {
     font-size: clamp(0.8rem, 4.8vw, 0.9rem);
     padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
@@ -628,7 +630,7 @@ menu {
     border-bottom: unset;
     box-shadow: 0 0.25rem 0 #bce3f8, 0 0.4rem 0.6rem -0.5rem rgb(60 90 120 / 40%);
     font-weight: 900;
-    transition: transform 0.9s ease, opacity 0.2s ease, visibility 0.2s ease;
+    transition: transform 0.3s ease-out, opacity 0.2s ease, visibility 0.2s ease;
     opacity: 0;
     visibility: hidden;
     transform: translate(0.6rem, 0.4rem) scale(0.9);
@@ -702,7 +704,7 @@ menu {
 
 @media (orientation:landscape) and (min-width:120vh), (min-width:1000px) {
 
-    .logo {
+    .logo_anchor {
         padding: clamp(2rem, calc(14rem - 10vw), 4rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
     }
 
