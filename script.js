@@ -79,8 +79,8 @@ document.onreadystatechange = function () {
         loadingBg.style.opacity = 0;
         loadingBg.style.visibility = 'hidden';
         setTimeout(() => {
-            menuBt.style.transform = 'translateY(0) rotate(0deg)'
-        }, 200);
+            menuBt.style.transform = 'translateY(0) rotate(0deg) scale(1)'
+        }, 300);
     }
 }
 
