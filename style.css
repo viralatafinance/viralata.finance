@@ -67,8 +67,8 @@ img, picture {
 
 
 .logo {
-    padding: clamp(4.8rem, 25vw, 5rem) 0 4rem 0;
-    width: clamp(15rem, 70vw, calc(33rem - 9vw));
+    padding: clamp(3.8rem, 20vw, 7rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
+    width: clamp(15rem, 75vw, calc(33rem - 9vw));
     margin: 0 auto;
     display: block;
 }
@@ -98,7 +98,7 @@ img, picture {
     display: inline-block;
     width: clamp(1rem, 5vw, 1.3rem);
     height: clamp(1rem, 5vw, 1.3rem);
-    padding: 0 clamp(0.4rem, 1vw, 0.6rem);
+    padding: 0 clamp(0.4rem, 2vw, 0.6rem);
 } .social img {
     width: 100%;
 }
@@ -125,7 +125,7 @@ img, picture {
 }
 
 .square09, .square08, .square07, .square06, .square04, .square03, .square02, .square01, .square05 {
-    animation: blinksquare 7s ease infinite;
+    animation: blinksquare 9s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 } .square09 {
     animation-delay: 1.5s;
 } .square08 {
@@ -149,9 +149,9 @@ img, picture {
 @keyframes blinksquare {
     0% {
         opacity: 1;
-    } 15% {
-        opacity: 0.6;
-    } 25% {
+    } 20% {
+        opacity: 0.4;
+    } 50% {
         opacity: 1;
     } 100% {
         opacity: 1;
@@ -176,16 +176,20 @@ img, picture {
 .intro_title {
     width: clamp(13rem, 80vw, 34rem);
     font-size: clamp(2rem, 12vw, 4.6rem);
-    line-height: clamp(2.8rem, 15vw, 5.5rem);
-    margin: 3rem auto 0 auto;
+    line-height: clamp(2.6rem, 14vw, 5.5rem);
+    margin: clamp(2rem, 9vw, 3rem) auto 0 auto;
     display: block;
     hyphens: manual;
+    font-weight: 600;
     overflow: hidden;
 } .intro_title b {
     font-weight: 100;
     text-decoration: underline;
     text-decoration-thickness: from-font;
     text-underline-offset: 0.3rem;
+    line-height: clamp(4rem, 6.8vw, 6.2rem);
+} .intro_title strong {
+    line-height: clamp(4rem, 6.8vw, 6.2rem);
 } .intro_title strong, .underdog_sec strong, .web3_sec strong, .how_sec strong {
     color: var(--c3);
 }
@@ -199,7 +203,7 @@ img, picture {
     left: -5%;
     width: 50%;
     height: 110%;
-    background-image: linear-gradient(20deg, #04fff8,#ff8400);
+    background-image: linear-gradient(20deg, #04fff8,#FFA300 70%);
     background-attachment: fixed;
     transform: translate3d(0,0,0);
 }
@@ -489,18 +493,27 @@ img, picture {
     margin: 4rem auto 0 auto;
     display: block;
     width: clamp(18rem, 90vw, 58rem);
-} .products_list a, .soon_a {
-    padding: 0.9rem 1.4rem;
+} .product_a, .soon_a {
+    padding: clamp(0.7rem, 4vw, 0.9rem) clamp(0.8rem, calc(20vw - 3rem), 1.4rem);
     display: inline-block;
     margin-top: 1.2rem;
     border: 1px solid var(--c4);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
     user-select: none;
     border-radius: 0.3rem;
+} .url_link {
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 0.6rem;
+    display: block;
+    font-size: clamp(0.8rem, 4.8vw, 1rem);
+    opacity: 0.6;
+} .url_link:hover {
+    opacity: 1;
 } .soon_a {
     opacity: 0.4;
-} .products_list a span {
+} .product_a span {
     position: relative;
     width: 0.3rem;
     height: 0.3rem;
@@ -508,14 +521,15 @@ img, picture {
     border-right: 2px solid var(--c4);
     border-top: 2px solid var(--c4);
     transform: rotate(45deg) translate(-0.1rem, -0.1rem);
-    margin: 0 0.2rem 0 1.2rem;
+    margin: 0 0.2rem 0 clamp(0.6rem, 1vw, 1.2rem);
 }
 
 
 .blog_section {
     background-color: var(--c4);
     background-image: linear-gradient(var(--c4), black);
-    padding: 7rem 0 0 0;
+    padding: clamp(16rem, 65vw, 20rem) 0 0 0;
+    margin-top: -14rem;
 } .blog_section h4 {
     font-size: clamp(2.6rem, 12vw, 4rem);
     text-align: center;
@@ -524,13 +538,14 @@ img, picture {
     margin: 3rem auto;
     font-family: 'Lato';
 } .blog_section picture {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border-radius: 0.4rem;
 } .blog_section h5 {
-    font-size: clamp(1.4rem, 6.5vw, 2rem);
-    line-height: clamp(2rem, 9vw, 2.7rem);
-    margin-bottom: 2rem;
+    font-size: clamp(1.4rem, 6.5vw, 1.8rem);
+    line-height: clamp(2rem, 9vw, 2.5rem);
+    margin-bottom: 1.8rem;
     letter-spacing: 1px;
+    font-weight: 500;
 } .blog_section picture:hover {
     filter:brightness(1.1)
 }  .blog_section p {
@@ -580,7 +595,7 @@ footer .social {
     border-radius: 10rem;
     cursor: pointer;
     border: 3px solid var( --c3);
-    box-shadow: 0 0.4rem 2rem -0.6rem;
+    box-shadow: 0 0.3rem 0.5rem rgb(60 90 120 / 40%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,24 +609,26 @@ menu {
     right: 0;
     text-align: right;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
     width: max-content;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
     visibility: hidden;
+    gap: 1.1rem;
 } menu a {
     font-size: clamp(0.8rem, 4.8vw, 0.9rem);
     padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
     display: inline-block;
     background: var(--c2);
-    margin: 0.4rem 0;
     color: var(--c1);
-    border-radius: 10rem;
-    border: 3px solid var(--c3);
-    box-shadow: 0 0.8rem 1rem -0.9rem var(--c1);
+    border-radius: 0.5rem;
+    border: 1px solid #bce3f8;
+    border-bottom: unset;
+    box-shadow: 0 0.25rem 0 #bce3f8, 0 0.4rem 0.6rem -0.5rem rgb(60 90 120 / 40%);
     font-weight: 900;
-    transition: transform 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transition: transform 0.9s ease, opacity 0.2s ease, visibility 0.2s ease;
     opacity: 0;
     visibility: hidden;
     transform: translate(0.6rem, 0.4rem) scale(0.9);
@@ -644,7 +661,15 @@ menu {
 }
 
 
-
+.fixed_top_border {
+    position: sticky;
+    top: 0;
+    width: 0%;
+    height: 0.3rem;
+    background-color: var(--c3);
+    z-index: 9;
+    will-change: width;
+}
 
 
 
@@ -677,21 +702,26 @@ menu {
 
 @media (orientation:landscape) and (min-width:120vh), (min-width:1000px) {
 
+    .logo {
+        padding: clamp(2rem, calc(14rem - 10vw), 4rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
+    }
+
     .intro_sec {
         flex-flow: row;
         gap: clamp(1rem, 6vw, 11rem);
     } .intro_sec svg {
-        width: clamp(7rem, 38vw, 34rem);
+        width: clamp(7rem, 38vw, 36rem);
         margin: 0;
     }
 
     .intro_title {
         width: clamp(13rem, 38vw, 38rem);
-        font-size: clamp(2.4rem, 5vw, 5rem);
-        line-height: clamp(3.1rem, 5.5vw, 5.5rem);
-        padding: 2rem 0;
-        margin: -2rem 0;
+        font-size: clamp(2.4rem, 5.5vw, 5.2rem);
+        line-height: clamp(3.1rem, 6.5vw, 5.6rem);
+        margin: unset;
         user-select: none;
+        padding: unset;
+        letter-spacing: -1px;
     }
 
     .mobile_hidden {
@@ -818,14 +848,14 @@ menu {
     .products_list ul {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5rem 8rem;
-    } .products_list a span {
+    } .product_a span {
         transition: transform 0.4s ease;
-    } .products_list a {
+    } .product_a {
         transition: border-color 0.6s ease;
-    } .products_list a:hover span {
+    } .product_a:hover span {
         transition: transform 0.05s ease;
         transform:rotate(45deg) translate(0.1rem, -0.3rem);
-    }  .products_list a:hover {
+    }  .product_a:hover {
         transition: border-color 0.05s ease;
         border-color:#ddd;
     }
