@@ -48,10 +48,22 @@ function hamburguer() {
 
 menuBt.addEventListener('click', hamburguer)
 
+
+const progresso = document.querySelector(".fixed_top_border")
+
+let scrollTotal = document.body.scrollHeight - innerHeight;
+let proporcao = scrollY / scrollTotal;
+progresso.style.width = `${proporcao * 100}%`;
+
+
 document.body.onscroll = function() {
     if(showingMenu == true) {
         hamburguer()
     }
+
+    scrollTotal = document.body.scrollHeight - innerHeight;
+    let proporcao = scrollY / scrollTotal;
+    progresso.style.width = `${proporcao * 100}%`;
 }
 
 
@@ -88,19 +100,6 @@ ScrollReveal().reveal('h1, .underdog_sec article h2, .underdog_sec article h3, .
 
 
 
-
-
-const progresso = document.querySelector(".fixed_top_border")
-
-let scrollTotal = document.body.scrollHeight - innerHeight;
-let proporcao = scrollY / scrollTotal;
-progresso.style.width = `${proporcao * 100}%`;
-
-document.body.onscroll = function(){
-    scrollTotal = document.body.scrollHeight - innerHeight;
-    let proporcao = scrollY / scrollTotal;
-    progresso.style.width = `${proporcao * 100}%`;
-}
 
 
 
