@@ -12,14 +12,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    
-
     <script src="script.js" defer></script>
     
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
 
     <meta property="og:url" content="https://viralata.finance">
     <meta property="og:title" content="Viralata Finance | Ecossistema Financeiro Descentralizado do Brasil">
@@ -61,7 +58,11 @@
     </div>
     
     <a class="logo_anchor" href="#down_sec">
-        <img class="logo" src="assets/logo.png" alt="" draggable="false">
+        <picture>
+            <source srcset="assets/logo.webp" type="image/webp">
+            <source srcset="assets/logo.png" type="image/jpeg"> 
+            <img src="assets/logo.png" alt="Logo Viralata Finance">
+        </picture>
     </a>
 
     <main>
@@ -133,11 +134,11 @@
             <article>
 
                 <aside>
-                    <picture loading="lazy">
+                    <picture>
                         <source srcset="assets/underdog_bg.avif" type="image/avif">
                         <source srcset="assets/underdog_bg.webp" type="image/webp">
                         <source srcset="assets/underdog_bg.png" type="image/jpeg"> 
-                        <img src="assets/underdog_bg.png" alt="Casal e paisagem tropical">
+                        <img loading="lazy" src="assets/underdog_bg.png" alt="Casal e paisagem tropical">
                     </picture>
                 </aside>
 
