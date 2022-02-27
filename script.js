@@ -76,15 +76,6 @@ const loadingBg = document.getElementById('loading_bg')
 
 document.onreadystatechange = function () {
     if (document.readyState == "interactive" || document.readyState == "complete") {
-
-        var link = document.createElement('link'); 
-           link.rel = 'stylesheet'; 
-        link.type = 'text/css';
-        link.href = 'fold.css'; 
-
-        document.getElementsByTagName('HEAD')[0].appendChild(link); 
-
-
         loadingBg.style.opacity = 0;
         loadingBg.style.visibility = 'hidden';
         setTimeout(() => {
