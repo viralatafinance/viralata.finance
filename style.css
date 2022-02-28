@@ -129,14 +129,7 @@ img, picture {
 
 
 .intro_sec svg.background_block {
-    position: absolute;
-    opacity: 0.05;
-    z-index: -1;
-    filter: blur(0.5rem);
-    width: 120%;
-    left: -70vw;
-    right: 0;
-    top: -3vw;
+    display:none;
 }
 
 .square09, .square08, .square07, .square06, .square04, .square03, .square02, .square01, .square05 {
@@ -739,6 +732,11 @@ menu {
     
 
     .intro_sec svg.background_block {
+        display: unset;
+        position: absolute;
+        opacity: 0.04;
+        z-index: -1;
+        filter: blur(0.5rem);
         width: 80vw;
         top: -23vw;
         left: -5vw;
