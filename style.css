@@ -66,6 +66,8 @@ img, picture {
     width: clamp(15rem, 75vw, calc(33rem - 9vw));
     margin: 0 auto;
     display: block;
+    position: relative;
+    z-index: 10;
 }
 .logo {
     width: 100%;
@@ -112,6 +114,8 @@ img, picture {
     width: clamp(13rem, 80vw, 34rem);
     filter: drop-shadow(0 0 0.8rem #233f50);
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
 } .intro_sec a {
     border-right: 0.4rem solid var(--c2);
     border-bottom: 0.4rem solid var(--c2);
@@ -120,6 +124,19 @@ img, picture {
     height: 0.8rem;
     transform: rotate(45deg) translate(200%, 100%);
     margin-bottom: 2rem;
+}
+
+
+
+.intro_sec svg.background_block {
+    position: absolute;
+    opacity: 0.05;
+    z-index: -1;
+    filter: blur(0.5rem);
+    width: 120%;
+    left: -70vw;
+    right: 0;
+    top: -3vw;
 }
 
 .square09, .square08, .square07, .square06, .square04, .square03, .square02, .square01, .square05 {
@@ -172,6 +189,7 @@ img, picture {
 }
 
 .intro_title {
+    position: relative;
     width: clamp(13rem, 80vw, 34rem);
     font-size: clamp(2rem, 12vw, 4.6rem);
     line-height: clamp(2.6rem, 14vw, 5.5rem);
@@ -180,6 +198,7 @@ img, picture {
     hyphens: manual;
     font-weight: 600;
     overflow: hidden;
+    z-index: 10;
 } .intro_title b {
     font-weight: 100;
     text-decoration: underline;
@@ -254,6 +273,7 @@ img, picture {
     user-select: none;
 } .why_sec article {
     background-color: var(--c1);
+    background-image: linear-gradient(-45deg, #13262c, var(--c1) 60%, #2f4650);
     width: clamp(13rem, 90vw, 70rem);
     margin: 0 auto;
     padding: clamp(1rem, 8vw, 2rem);
@@ -262,6 +282,7 @@ img, picture {
     top: clamp(-19rem, -40vw, -10rem);
     border-radius: clamp(0.2rem, 4vw, 2rem);
     margin-bottom: clamp(-13rem, -40vw, -10rem);
+    border: 1px solid #466876;
 } .why_sec div {
 
 } .why_sec p {
@@ -316,14 +337,18 @@ img, picture {
 
 } .how_sec article {
     width: clamp(13rem, 90vw, 70rem);
-    background: black;
+    background-color: black;
+    background-image: radial-gradient(#001410, black 70vw);
+    background-attachment: fixed;
+    background-size: auto 38%;
+    background-position: center 38%;
+    background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 1.5rem;
     overflow: hidden;
     padding: 2rem;
     box-sizing: border-box;
     border: 2px solid var(--c3);
-    box-shadow: inset 0 0 3rem var(--c1), 0 0 2rem -1.5rem var(--c3);
 } .how_sec article img {
     margin: 0 auto 2rem auto;
     display: block;
@@ -506,7 +531,7 @@ img, picture {
 } .url_link {
     font-style: italic;
     font-weight: 200;
-    margin-top: 0.6rem;
+    margin-top: 0.8rem;
     display: block;
     font-size: clamp(0.8rem, 4.8vw, 1rem);
     opacity: 0.6;
@@ -697,8 +722,6 @@ menu {
 
 
 
-
-
 @media (orientation:landscape) and (min-width:120vh), (min-width:1000px) {
 
     .logo_anchor {
@@ -712,6 +735,16 @@ menu {
         width: clamp(7rem, 38vw, 36rem);
         margin: 0;
     }
+
+    
+
+    .intro_sec svg.background_block {
+        width: 80vw;
+        top: -23vw;
+        left: -5vw;
+    }
+
+
 
     .intro_title {
         width: clamp(13rem, 38vw, 38rem);
@@ -800,7 +833,7 @@ menu {
 
     .how_title {
         transform: rotate(-90deg);
-        margin: 15rem 1rem 0 -15vw;
+        margin: 10rem 1rem 0 -15vw;
 
     } .how_title span {
         letter-spacing: -6px;
@@ -808,17 +841,21 @@ menu {
         display: flex;
         align-items: end;
         justify-content: center;
+        align-items: center;
+        padding-top: 8rem;
     }
 
     .commitment {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
+        width: unset;
+        gap: 1rem;
     } .commitment div {
         width: clamp(20rem, 40vw, 25rem);
     } .commitment h4 {
         width: 18rem;
+        margin-bottom: 0;
     }
 
     .products_sec {
