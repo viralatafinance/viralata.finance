@@ -83,6 +83,7 @@ img, picture {
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
+    z-index: 11;
 } .lang {
 
 } .lang a {
