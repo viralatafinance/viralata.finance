@@ -663,6 +663,8 @@ menu {
     opacity:1;
     visibility: visible;
     transform:translate(0, 0) scale(1);
+} .no_delay {
+    transition-delay: unset !important;
 }
 
 .menu_bt svg {
