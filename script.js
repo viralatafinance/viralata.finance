@@ -118,7 +118,3 @@ navigator.serviceWorker.getRegistrations().then(function(registrations) {
       registration.unregister()
       document.location.reload()
 } })
-
-
-
-
