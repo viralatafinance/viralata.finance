@@ -53,7 +53,7 @@ const progresso = document.querySelector(".fixed_top_border")
 
 let scrollTotal = document.body.scrollHeight - innerHeight;
 let proporcao = scrollY / scrollTotal;
-progresso.style.width = `${proporcao * 100}%`;
+progresso.style.transform = `translate3d(calc(${proporcao * 100}% - 100%), 0, 0)`;
 
 
 document.body.onscroll = function() {
@@ -63,7 +63,7 @@ document.body.onscroll = function() {
 
     scrollTotal = document.body.scrollHeight - innerHeight;
     let proporcao = scrollY / scrollTotal;
-    progresso.style.width = `${proporcao * 100}%`;
+    progresso.style.transform = `translate3d(calc(${proporcao * 100}% - 100%), 0, 0)`;
 }
 
 
