@@ -199,6 +199,9 @@ img, picture {
     text-decoration-thickness: from-font;
     text-underline-offset: 0.3rem;
     line-height: clamp(4rem, 6.8vw, 6.2rem);
+} .intro_title b span {
+    display: inline-block;
+    text-decoration: unset;
 } .intro_title strong {
     line-height: clamp(4rem, 6.8vw, 6.2rem);
 } .intro_title strong, .underdog_sec strong, .web3_sec strong, .how_sec strong {
@@ -455,9 +458,10 @@ img, picture {
 } .products_sec p {
     position: absolute;
     right: 0;
-    top: 4rem;
-    width: clamp(8.6rem, 42vw, 16rem);
-    font-size: clamp(0.9rem, 4.6vw, 1.3rem);
+    top: clamp(2.5rem, 20vw, 4rem);
+    width: clamp(8.6rem, 45vw, 16rem);
+    font-size: clamp(0.9rem, 4.7vw, 1.3rem);
+    line-height: clamp(1.3rem, 5.8vw, 2rem);
     z-index: 2;
 } .products_sec article img {
     position: absolute;
@@ -684,11 +688,12 @@ menu {
 .fixed_top_border {
     position: sticky;
     top: 0;
-    width: 0%;
+    width: 100%;
     height: 0.3rem;
     background-color: var(--c3);
     z-index: 9;
-    will-change: width;
+    transform:translate3d(-100%, 0, 0);
+    will-change: transform;
 }
 
 
@@ -727,6 +732,7 @@ menu {
     .intro_sec {
         flex-flow: row;
         gap: clamp(1rem, 6vw, 11rem);
+        align-items: self-start;
     } .intro_sec svg {
         width: clamp(7rem, 38vw, 36rem);
         margin: 0;
@@ -748,7 +754,7 @@ menu {
 
 
     .intro_title {
-        width: clamp(13rem, 38vw, 38rem);
+        width: clamp(13rem, 43vw, 44rem);
         font-size: clamp(2.4rem, 5.5vw, 5.2rem);
         line-height: clamp(3.1rem, 6.5vw, 5.6rem);
         margin: unset;
@@ -866,8 +872,7 @@ menu {
     } .products_sec h6 {
         
     } .products_sec p {
-        font-size: clamp(1rem, 4.6vw, 1.4rem);
-        line-height: 1.95rem;
+        font-size: clamp(0rem, 4.6vw, 1.3rem);
     } .products_sec article img {
         bottom: calc(-13rem + 10vw);
         right: calc(-30vw + 5rem);
