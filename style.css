@@ -187,7 +187,7 @@ img, picture {
     position: relative;
     width: clamp(13rem, 80vw, 34rem);
     font-size: clamp(2rem, 12vw, 4.6rem);
-    line-height: clamp(2.6rem, 14vw, 5.5rem);
+    line-height: 1.2em;
     margin: clamp(2rem, 9vw, 3rem) auto 0 auto;
     display: block;
     hyphens: manual;
@@ -213,46 +213,38 @@ img, picture {
 
 
 .underdog_sec aside {
-    position: absolute;
-    z-index: -1;
-    top: -5%;
-    left: -5%;
-    width: 50%;
-    height: 110%;
     background-image: linear-gradient(20deg, #04fff8,#FFA300 70%);
     background-attachment: fixed;
     transform: translate3d(0,0,0);
+    flex: 1;
 }
 
 .underdog_sec article {
     overflow: hidden;
-    display: block;
-    height: 50rem;
+    display: flex;
     position: relative;
 } .underdog_sec article picture {
     position: absolute;
     z-index: -1;
     top: -5%;
-    left: 2vw;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
 } .underdog_sec article img {
     height: 100%;
     object-fit: cover;
 } .underdog_sec div {
     background-color: var(--c4);
-    position: absolute;
     right: 0;
     width: clamp(12rem, 62vw, 60rem);
     height: 100%;
     max-width: 50rem;
-    padding: calc(1.5rem + 4vw);
+    padding: calc(1.5rem + 4vw) calc(1.5rem + 4vw) clamp(9rem, 38vw, 21rem) calc(1.5rem + 4vw);
     font-size: 1.5rem;
 } .underdog_sec article h1 {
     font-size: clamp(1.7rem, 8vw, 2.2rem);
     margin-bottom: 2rem;
 } .underdog_sec article h2 {
-    font-size: clamp(1rem, 7vw, 1.3rem);
+    font-size: clamp(0.9rem, 4.3vw, 1.3rem);
     font-weight: 400;
     line-height: 1.5em;
     hyphens: auto;
@@ -342,7 +334,7 @@ img, picture {
 } .how_sec article {
     width: clamp(13rem, 90vw, 70rem);
     background-color: black;
-    background-image: radial-gradient(#001410, black 70vw);
+    background-image: linear-gradient(25deg, black 40%, #0A1D1B, black 60%);
     background-attachment: fixed;
     background-size: auto 38%;
     background-position: center 38%;
@@ -393,7 +385,7 @@ img, picture {
     width: clamp(13rem, 82vw, 34rem);
     margin: 0 auto 1rem auto;
     font-size: clamp(0.85rem, 4.5vw, 1.15rem);
-    line-height: 1.6em;
+    line-height: clamp(1.6em, 6vw, 1.8em);
     font-family: 'Lato';
     font-weight: 300;
     letter-spacing: 1.2px;
@@ -522,7 +514,7 @@ img, picture {
     color: var(--c4);
 }  .products_list h4 {
     font-size: 1rem;
-    line-height: 1.5em;
+    line-height: 1.6em;
     margin-top: 0.7rem;
     letter-spacing: -0.02em;
     font-weight: 400;
@@ -772,9 +764,9 @@ menu {
 
 
     .intro_title {
-        width: clamp(13rem, 43vw, 44rem);
-        font-size: clamp(2.4rem, 4.5vw, 5.2rem);
-        line-height: clamp(3.1rem, 5vw, 5.6rem);
+        width: clamp(13rem, 39vw, 44rem);
+        font-size: clamp(2.4rem, calc(2.5vw + 2rem), 5.2rem);
+        line-height: 1.1em;
         margin: unset;
         user-select: none;
         padding: unset;
@@ -796,11 +788,18 @@ menu {
     
     .why_sec span {
         transform: rotate(-90deg);
-        font-size: clamp(8.5rem, 12vw, 9.5rem);
+        font-size: clamp(8rem, 8vw, 9.5rem);
         line-height: 1.1em;
         margin: calc(-4rem - 6vw) 0rem 0 -3rem;
         align-self: center;
         padding: clamp(3rem, 9vw, 7.5rem) 0;
+    } .why_sec .en_article span {
+        transform: rotate(-90deg);
+        font-size: clamp(8rem, 8vw, 9.5rem);
+        line-height: 1.1em;
+        margin: 0;
+        align-self: center;
+        padding: clamp(3rem, 9vw, 5.5rem) 0;
     } .why_sec article {
         display: flex;
         justify-content: space-between;
