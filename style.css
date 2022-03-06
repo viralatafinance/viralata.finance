@@ -199,12 +199,13 @@ img, picture {
     text-decoration: underline;
     text-decoration-thickness: from-font;
     text-underline-offset: 0.3rem;
-    line-height: clamp(4rem, 6.8vw, 6.2rem);
+    line-height: 1.2em;
 } .intro_title b span {
     display: inline-block;
     text-decoration: unset;
+    font-weight: 500;
 } .intro_title strong {
-    line-height: clamp(4rem, 6.8vw, 6.2rem);
+    line-height: 1.3em;
 } .intro_title strong, .underdog_sec strong, .web3_sec strong, .how_sec strong {
     color: var(--c3);
 }
@@ -253,6 +254,8 @@ img, picture {
 } .underdog_sec article h2 {
     font-size: clamp(1rem, 7vw, 1.3rem);
     font-weight: 400;
+    line-height: 1.5em;
+    hyphens: auto;
 }
 
 .why_sec {
@@ -284,8 +287,9 @@ img, picture {
 } .why_sec div {
 
 } .why_sec p {
+    color: #ACC;
     font-size: clamp(1rem, 5vw, 1.1rem);
-    line-height: clamp(1.6rem, 5vw, 1.1rem);
+    line-height: clamp(1.6em, 1vw, 1.8em);
     margin-bottom: 1.5rem;
     font-family: 'Lato', sans-serif;
     width: 95%;
@@ -324,7 +328,9 @@ img, picture {
     text-transform: uppercase;
     letter-spacing: 1px;
 } .web3_sec p {
-    
+    font-size: clamp(0.9rem, 4.5vw, 1.4rem);
+    line-height: 1.8em;
+    font-weight: 500;
 } .web3_sec span {
     color:var(--c5-2)
 } .web3_sec strong {
@@ -352,12 +358,12 @@ img, picture {
     display: block;
     width: clamp(14rem, 25vw, 20rem);
 } .how_sec article p {
-    font-size: clamp(1rem, 4.5vw, 1.4rem);
-    line-height: clamp(1.6rem, 5vw, 2.5rem);
     width: clamp(14rem, 75vw, 42rem);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin: 0 auto;
+    font-size: clamp(0.9rem, 4.4vw, 1.4rem);
+    line-height: 1.8em;
 }
 
 .how_title {
@@ -386,8 +392,8 @@ img, picture {
 } .how_sec div p {
     width: clamp(13rem, 82vw, 34rem);
     margin: 0 auto 1rem auto;
-    font-size: clamp(0.85rem, 4.2vw, 1.15rem);
-    line-height: clamp(1.4rem, 7vw, 1.8rem);
+    font-size: clamp(0.85rem, 4.5vw, 1.15rem);
+    line-height: 1.6em;
     font-family: 'Lato';
     font-weight: 300;
     letter-spacing: 1.2px;
@@ -407,7 +413,7 @@ img, picture {
     margin: 2rem auto 3rem auto;
     width: clamp(14rem, 80vw, 70rem);
 } .commitment h4 {
-    font-size: clamp(1.5rem, 6.5vw, 1.8rem);
+    font-size: clamp(1.2rem, 6.5vw, 1.7rem);
     min-width: 22vw;
     margin-bottom: 1rem;
     color: var(--c5);
@@ -464,9 +470,9 @@ img, picture {
     position: absolute;
     right: 0;
     top: clamp(2.5rem, 20vw, 4rem);
-    width: clamp(8.6rem, 45vw, 16rem);
-    font-size: clamp(0.9rem, 4.7vw, 1.3rem);
-    line-height: clamp(1.3rem, 5.8vw, 2rem);
+    width: clamp(8.6rem, 43vw, 16rem);
+    font-size: clamp(0.9rem, 4.6vw, 1.3rem);
+    line-height: clamp(1.35em, 1.8vw, 1.6em);
     z-index: 2;
 } .products_sec article img {
     position: absolute;
@@ -508,28 +514,29 @@ img, picture {
 } .products_list li {
     
 } .products_list h3 {
-    font-size: clamp(1.5rem, 6.5vw, 1.8rem);
+    font-size: clamp(1.5rem, 6.5vw, 1.6rem);
     margin-bottom: 1rem;
 } .products_list h3 div {
     font-size: clamp(1.2rem, 6.5vw, 1.5rem);
     display: inline;
     color: var(--c4);
 }  .products_list h4 {
-    font-size: clamp(1rem, 4.3vw, 1.1rem);
-    line-height: clamp(1.6rem, 5vw, 1.8rem);
+    font-size: 1rem;
+    line-height: 1.5em;
     margin-top: 0.7rem;
+    letter-spacing: -0.02em;
     font-weight: 400;
 } .open_arms_doggo {
     margin: 4rem auto 0 auto;
     display: block;
     width: clamp(18rem, 90vw, 58rem);
 } .product_a, .soon_a {
-    padding: clamp(0.7rem, 4vw, 0.9rem) clamp(0.8rem, calc(20vw - 3rem), 1.4rem);
+    padding: clamp(0.7rem, 4vw, 0.8rem) clamp(0.8rem, calc(20vw - 3rem), 1.3rem);
     display: inline-block;
     margin-top: 1.2rem;
     border: 1px solid var(--c4);
     font-weight: 600;
-    font-size: clamp(0.85rem, 1vw, 0.95rem);
+    font-size: clamp(0.85rem, 1vw, 0.85rem);
     user-select: none;
     border-radius: 0.3rem;
 } .url_link {
@@ -561,7 +568,7 @@ img, picture {
     padding: clamp(16rem, 65vw, 20rem) 0 0 0;
     margin-top: -14rem;
 } .blog_section h4 {
-    font-size: clamp(2.6rem, 12vw, 4rem);
+    font-size: clamp(2.6rem, 12vw, 3.2rem);
     text-align: center;
 } .blog_section article {
     width: clamp(13rem, 80vw, 42rem);
@@ -571,19 +578,19 @@ img, picture {
     margin-bottom: 2rem;
     border-radius: 0.4rem;
 } .blog_section h5 {
-    font-size: clamp(1.4rem, 6.5vw, 1.8rem);
-    line-height: clamp(2rem, 9vw, 2.5rem);
+    font-size: clamp(1.4rem, 6.5vw, 1.6rem);
+    line-height: 1.3em;
     margin-bottom: 1.8rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03em;
     font-weight: 500;
 } .blog_section picture:hover {
     filter:brightness(1.1)
 }  .blog_section p {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    line-height: clamp(1.6rem, 5vw, 1.9rem);
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    line-height: 1.65em;
     text-align: justify;
     font-weight: 100;
-    color: #DDD;
+    color: #BBB;
 } .blog_section p a {
     color: var(--c3);
     padding: 0.15rem 0.4rem;
@@ -648,7 +655,7 @@ menu {
     visibility: hidden;
     gap: clamp(0.8rem, 3.5vw, 1rem);
 } menu a {
-    font-size: clamp(0.8rem, 4.8vw, 0.9rem);
+    font-size: clamp(0.8rem, 4.8vw, 0.85rem);
     padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
     display: inline-block;
     background: var(--c2);
@@ -766,8 +773,8 @@ menu {
 
     .intro_title {
         width: clamp(13rem, 43vw, 44rem);
-        font-size: clamp(2.4rem, 5.5vw, 5.2rem);
-        line-height: clamp(3.1rem, 6.5vw, 5.6rem);
+        font-size: clamp(2.4rem, 4.5vw, 5.2rem);
+        line-height: clamp(3.1rem, 5vw, 5.6rem);
         margin: unset;
         user-select: none;
         padding: unset;
@@ -775,11 +782,10 @@ menu {
     }
 
     .underdog_sec article h1 {
-        font-size: clamp(2.6rem, 4.5vw, 3.3rem);
+        font-size: clamp(2.6rem, 3vw, 3.3rem);
         max-width: 47rem;
     } .underdog_sec article h2 {
-        font-size: clamp(1.2rem, 1.3vw, 1.4rem);
-        line-height: clamp(1.6rem, 2.3vw, 2rem);
+        font-size: clamp(1.2rem, 1vw, 1.4rem);
         width: clamp(31rem, 60vw, 42rem);
     } .underdog_sec article picture {
         will-change: transform;
@@ -790,22 +796,22 @@ menu {
     
     .why_sec span {
         transform: rotate(-90deg);
-        font-size: clamp(8.5rem, 12vw, 10rem);
-        line-height: clamp(9rem, 13vw, 11rem);
-        margin: calc(-4rem - 6vw) 1rem -2vw -2rem;
+        font-size: clamp(8.5rem, 12vw, 9.5rem);
+        line-height: 1.1em;
+        margin: calc(-4rem - 6vw) 0rem 0 -3rem;
         align-self: center;
+        padding: clamp(3rem, 9vw, 7.5rem) 0;
     } .why_sec article {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     } .why_sec div {
         width: 80%;
     } .why_sec p {
-        font-size: clamp(1.2rem, 1.8vw, 1.25rem);
-        line-height: clamp(1.8rem, 2.6vw, 2.2rem);
+        font-size: clamp(1.15rem, 1.1vw, 1.3rem);
         margin: 1rem 0;
         width: 90%;
         font-weight: 100;
-        color: #CEE;
     }
 
 
@@ -841,11 +847,12 @@ menu {
     } .how_sec article img {
         margin: 2rem 0;
     } .how_sec article p {
-        font-size: clamp(1rem, 4.5vw, 1.7rem);
+        /* font-size: clamp(1rem, 4.5vw, 1.7rem); */
         width: clamp(14rem, 75vw, 23rem);
         margin: unset;
     } .how_sec div p {
         width: clamp(13rem, 82vw, 24rem);
+        font-size: clamp(1rem, 1.5vw, 1.1rem);
     }
 
     .how_title {
@@ -859,7 +866,7 @@ menu {
         align-items: end;
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 
     .commitment {
@@ -882,7 +889,7 @@ menu {
     } .products_sec h6 {
         
     } .products_sec p {
-        font-size: clamp(0rem, 4.6vw, 1.3rem);
+        font-size: clamp(1.2rem, 4.6vw, 1.2rem);
     } .products_sec article img {
         bottom: calc(-13rem + 10vw);
         right: calc(-30vw + 5rem);
