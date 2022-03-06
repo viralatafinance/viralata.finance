@@ -279,7 +279,7 @@ img, picture {
 } .why_sec div {
 
 } .why_sec p {
-    color: #ACC;
+    color: #BDD;
     font-size: clamp(1rem, 5vw, 1.1rem);
     line-height: clamp(1.6em, 1vw, 1.8em);
     margin-bottom: 1.5rem;
@@ -334,10 +334,9 @@ img, picture {
 } .how_sec article {
     width: clamp(13rem, 90vw, 70rem);
     background-color: black;
-    background-image: linear-gradient(25deg, black 40%, #0A1D1B, black 60%);
+    background-image: linear-gradient(25deg, black 30%, #0A1D1B, black 60%);
     background-attachment: fixed;
-    background-size: auto 38%;
-    background-position: center 38%;
+    background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     border-radius: 1.5rem;
@@ -777,7 +776,7 @@ menu {
         font-size: clamp(2.6rem, 3vw, 3.3rem);
         max-width: 47rem;
     } .underdog_sec article h2 {
-        font-size: clamp(1.2rem, 1vw, 1.4rem);
+        font-size: clamp(1.15rem, 1.1vw, 1.3rem);
         width: clamp(31rem, 60vw, 42rem);
     } .underdog_sec article picture {
         will-change: transform;
@@ -843,6 +842,7 @@ menu {
         justify-content: space-evenly;
         align-items: center;
         width: clamp(13rem, 80vw, 70rem);
+        background-image: linear-gradient(25deg, black 30%, #0A1D1B, black 60%);
     } .how_sec article img {
         margin: 2rem 0;
     } .how_sec article p {
