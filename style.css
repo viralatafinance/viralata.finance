@@ -64,7 +64,7 @@ img, picture {
 
 .logo_anchor {
     padding: clamp(3.8rem, 20vw, 7rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
-    width: clamp(15rem, 75vw, calc(33rem - 9vw));
+    width: clamp(15rem, 75vw, calc(28rem - 9vw));
     margin: 0 auto;
     display: block;
     position: relative;
@@ -213,7 +213,7 @@ img, picture {
 
 
 .underdog_sec aside {
-    background-image: linear-gradient(20deg, #04fff8,#FFA300 70%);
+    background-image: linear-gradient(160deg, #04fff8,#FFA300 70%);
     background-attachment: fixed;
     transform: translate3d(0,0,0);
     flex: 1;
@@ -735,7 +735,7 @@ menu {
 @media (orientation:landscape) and (min-width:120vh), (min-width:1000px) {
 
     .logo_anchor {
-        padding: clamp(2rem, calc(14rem - 10vw), 4rem) 0 clamp(2rem, 10vw, 4.6rem) 0;
+        padding: clamp(2rem, calc(15rem - 10vw), 5rem) 0 clamp(2rem, 10vw, 5.5rem) 0;
     }
 
     .intro_sec {
@@ -764,7 +764,7 @@ menu {
 
     .intro_title {
         width: clamp(13rem, 39vw, 44rem);
-        font-size: clamp(2.4rem, calc(2.5vw + 2rem), 5.2rem);
+        font-size: clamp(2.4rem, calc(2.8vw + 2rem), 5.2rem);
         line-height: 1.1em;
         margin: unset;
         user-select: none;
