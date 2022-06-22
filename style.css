@@ -1090,13 +1090,13 @@ menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 91vh;
 } .greeting {
     text-align: center;
     font-size: clamp(1.2rem, 4.5vw, 1.4rem);
     margin-bottom: 1rem;
 } .bio_ctnr article {
-    width: clamp(15rem, 85vw, 25rem);
+    width: clamp(15rem, 80vw, 25rem);
     flex-direction: column;
     gap: 0.8rem;
 } .bio_ctnr article a {
