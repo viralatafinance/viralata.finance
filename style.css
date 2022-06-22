@@ -1,4 +1,4 @@
-h1, .underdog_sec article h1, .underdog_sec article h2, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
+.main_body h1, .underdog_sec article h1, .underdog_sec article h2, .why_sec span, .why_sec p, .web3_sec p, .how_sec p, .products_sec h6, .products_sec p, .products_list li, .products_list img, .blog_section article {
     visibility: hidden;
 }
 
@@ -132,6 +132,16 @@ img, picture {
 
 .intro_sec svg.background_block {
     display:none;
+}
+
+.bio_body .background_block {
+    position: absolute;
+    opacity: 0.04;
+    z-index: -1;
+    filter: blur(0.2rem);
+    height: 91vh;
+    top: 0vh;
+    right: 0vw;
 }
 
 .square09, .square08, .square07, .square06, .square04, .square03, .square02, .square01, .square05 {
@@ -749,15 +759,17 @@ menu {
 
     
 
-    .intro_sec svg.background_block {
+    .intro_sec svg.background_block, .bio_body .background_block {
         display: unset;
         position: absolute;
         opacity: 0.04;
         z-index: -1;
         filter: blur(0.5rem);
         width: 80vw;
+        height:unset;
         top: -23vw;
         left: -5vw;
+        right:unset;
     }
 
 
@@ -1050,4 +1062,74 @@ menu {
     html {
         font-size:32px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bio_body, .bio_ctnr, .bio_ctnr article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio_body {
+    height:100vh;
+    overflow: hidden;
+} .bio_ctnr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} .greeting {
+    text-align: center;
+    font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+    margin-bottom: 1rem;
+} .bio_ctnr article {
+    width: clamp(15rem, 85vw, 25rem);
+    flex-direction: column;
+    gap: 0.8rem;
+} .bio_ctnr article a {
+    border: 0.1rem solid;
+    border-color: transparent;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    padding: clamp(0.6rem, 4vw, 0.9rem) 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.4rem;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+    background-color: var(--c4-2);
+    background-image: linear-gradient(180deg, #0002, #0000 60%);
+} .bio_ctnr article a:hover {
+    background-color: #161e21;
+    border-color: var(--c3);
+    transition: background-color 0.05s ease, border-color 0.05s ease;
+} .bio_ctnr article .flex_div {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    gap: 0.6rem;
+} .bio_ctnr h1 {
+    text-align: center;
+    font-size: clamp(0.9rem, 4.5vw, 1rem);
+    font-weight: 400;
+    margin: 1rem 0 0;
+    letter-spacing: 0.06rem;
+    cursor: pointer;
+} .bio_body .logo_anchor {
+    margin: 0 0 3rem;
+    padding:unset;
+} .bio_ctnr .divider {
+
 }
