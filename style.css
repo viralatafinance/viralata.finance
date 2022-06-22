@@ -1090,7 +1090,7 @@ menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 91vh;
+    min-height: 95vh;
 } .greeting {
     text-align: center;
     font-size: clamp(1.2rem, 4.5vw, 1.4rem);
