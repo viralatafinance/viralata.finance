@@ -1084,13 +1084,19 @@ menu {
 
 .bio_body {
     height:100vh;
+} .bio_body .bg_ctnr {
+    position: absolute;
+    inset:0;
     overflow: hidden;
+    pointer-events: none;
 } .bio_ctnr {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 95vh;
+    padding: 3rem 0;
+    box-sizing: border-box;
 } .greeting {
     text-align: center;
     font-size: clamp(1.2rem, 4.5vw, 1.4rem);
