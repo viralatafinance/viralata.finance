@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5NGPDM5');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição | Newsletter Viralata</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:url" content="https://viralata.finance">
+    <meta property="og:title" content="Viralata | Ecossistema Financeiro Descentralizado do Brasil">
+    <meta property="og:site_name" content="Viralata">
+    <meta property="og:image" content="https://viralata.finance/og/viralata_finance_og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+</head>
+<body class="newsletter_body">
+    <main>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit!</h1>
+
+        <img class="doggo_gif" alt="Doggo da Newsletter" draggable="false">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, iste? Nobis voluptates est dignissimos porro quibusdam cupiditate natus saepe corrupti expedita non, asperiores excepturi sapiente quidem quaerat tempore nemo! Adipisci.</p>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+            <label>E-mail: <input type="email" name="email" /></label>
+            </p>
+            <button type="submit">Send</button>
+            </p>
+        </form>
+
+    </main>
+
+
+    <script>
+        const doggoGIF = document.querySelector('.doggo_gif')
+        const doggoBG = document.querySelector('.newsletter_body')
+
+        const randomN = Math.floor(Math.random() * 18 + 1);
+        const randomN2 = Math.floor(Math.random() * 18 + 1);
+
+        doggoGIF.setAttribute('src', `assets/newsletter/doggo${randomN}.gif`)
+        doggoBG.style.backgroundImage = `url(assets/newsletter/doggo${randomN2}.gif)`
+    </script>
+</body>
+</html>

@@ -1072,7 +1072,7 @@ menu {
 
 
 
-
+/* SOCIAL BIO */
 
 
 
@@ -1139,3 +1139,52 @@ menu {
 } .bio_ctnr .divider {
 
 }
+
+
+
+
+
+
+
+/* NEWSLETTER */
+
+
+.newsletter_body {
+    font-family: 'Helvetica';
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--c4-2);
+    min-height: 115vh;
+    background-image: url(assets/newsletter/doggo1.gif);
+    background-size: clamp(18rem, 24vw, 30rem);
+    background-position: center top;
+    background-attachment: fixed;
+} .newsletter_body main {
+    width: clamp(14rem, 91vw, 50rem);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    gap: 1rem;
+    margin: 6rem 0;
+    background-color: var(--c2);
+    color: var(--c1);
+} .doggo_gif {
+    width: clamp(12rem, 85vw, 30rem);
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+
+
+
+
+
+
+
