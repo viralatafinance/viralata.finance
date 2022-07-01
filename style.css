@@ -1160,31 +1160,92 @@ menu {
     background-size: clamp(18rem, 24vw, 30rem);
     background-position: center top;
     background-attachment: fixed;
+    color:#233;
+} .newsletter_body h1 {
+    font-size: clamp(1rem, 5.3vw, 1.8rem);
+    font-weight: 600;
+    margin: 1rem 0 clamp(0rem, 1vw, 0.4rem);
+    line-height: 1.4;
+    max-width: clamp(12rem, 75vw, 38rem);
+} .newsletter_body h1 span {
+    color: #1e90ff;
 } .newsletter_body main {
-    width: clamp(14rem, 91vw, 50rem);
+    width: clamp(14rem, 86vw, 46rem);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4rem 3rem;
+    padding: 0 0 3rem;
     box-sizing: border-box;
     gap: 1rem;
-    margin: 6rem 0;
+    margin: 7rem 0;
     background-color: var(--c2);
-    color: var(--c1);
+    border: 0.2rem solid #DDE;
 } .doggo_gif {
     width: clamp(12rem, 85vw, 30rem);
     max-height: 20rem;
     object-fit: cover;
     border-radius: 0.3rem;
+    margin: 1rem 0;
+} .newsletter_body .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: clamp(12rem, 67vw, 30rem);
+    text-align: justify;
+    line-height: 1.6;
+    font-size: clamp(0.85rem, 3rem, 1rem);
+} .newsletter_body .content b {
+
+} .emojis {
+    font-size: clamp(2.2rem, 11vw, 3.1rem);
+    margin-top: calc(clamp(2.2rem, 11vw, 3.1rem) * -0.8);
+} .return {
+    position: fixed;
+    top: 0.8rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--c2);
+    width: max-content;
+    color: var(--c1);
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+    border: 0.2rem solid #DDE;
+    font-size: 0.95rem;
+    box-shadow: 0 0.2rem 0.4rem #2225;
 }
 
 
-
-
-
+.newsletter_body form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: clamp(12rem, 67vw, 30rem);
+} .newsletter_body label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} .newsletter_body form input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+} .newsletter_body .submit {
+    background-color: var(--c4);
+    border: #ffdead;
+    color: var(--c2);
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 
 
