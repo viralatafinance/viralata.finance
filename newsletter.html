@@ -30,29 +30,28 @@
 </head>
 <body class="newsletter_body">
 
-    <a class="return" href="./index.html">voltar pra página inicial</a>
+    <a class="return" href="./index.html">Voltar para a página inicial</a>
 
     <main>
         <span class="emojis">📧📬👌</span>
-        <h1>Opa, senta aí! Eu pego o café e os petiscos. <span>Bora terminar essa semana bem</span> 😎</h1>
+        <h1>Opa, senta aí! Eu pego o ☕ e os petiscos! <span>Bora terminar essa semana bem.</span> 😎</h1>
 
         <div class="content">
     
-            <p>Vira-lata sabe sempre o que tá rolando por aí. <b>Cheirinho de informação é algo que a gente sente de longe.</b> Na nossa veia corre astúcia, mas é ainda mais esperto aquele que compartilha isso com a matilha. <b>Confia no nosso faro!</b></p>
+            <p>Vira-lata sabe sempre o que tá rolando por aí. <b>Se tem algo que a gente sente de longe é o cheirinho de informação nova.</b> Na nossa veia corre astúcia, mas aquele que compartilha isso com a matilha é ainda mais astuto. <b>Confia no nosso faro!</b></p>
 
             <img class="doggo_gif" alt="Doggo da Newsletter" draggable="false">
     
-            <p>O Correio Canino é o boletim informativo que traz <strong>notícias sobre variedades, cripto, DeFi, dicas, memes e aquelas infos que você prefere não perder ao longo da semana. Ou seja, a mistura que o brasileiro curte!</strong></p>
+            <p>Correio Canino é o boletim informativo que traz <strong>notícias sobre variedades, dicas, memes, cripto/DeFi e aquelas infos que você  não quer perder ao longo da semana. Ou seja, a mistura boa que faz o vira-lata!</strong></p>
 
             <p>As novidades e todo o conteúdo Viralata resumidos em um e-mail, <strong>de sexta-feira</strong>, pra você. Se inscreve aí, vai? 😁</p>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form id="form" name="contact" method="POST" data-netlify="true">
             <p>
-            <label>Seu e-mail: <input type="email" name="email" /></label>
+                <label><input type="email" name="email" placeholder="manda-o-seu-email@aqui.com" required/></label>
             </p>
-            <button class="submit" type="submit">Pronto! 🤙</button>
-            </p>
+            <button class="submitBt" type="submit">Me inscrever!</button>
         </form>
 
     </main>
@@ -67,6 +66,38 @@
 
         doggoGIF.setAttribute('src', `assets/newsletter/doggo${randomN}.gif`)
         doggoBG.style.backgroundImage = `url(assets/newsletter/doggo${randomN2}.gif)`
+    </script>
+
+    <script>
+        function formSuccess() {
+            const submitBt = document.querySelector('.send');
+
+            setTimeout(() => {
+                submitBt.innerHTML = "Pronto! 🤙"
+            }, 300);
+
+            let allInputs = document.querySelectorAll('input');
+
+            for(i=0;i<allInputs.length;i++) {
+                allInputs[i].value = "";
+                allInputs[i].checked = false;
+            }
+        }
+
+        const handleSubmit = (e) => {
+        e.preventDefault();
+        let myForm = document.getElementById("form");
+        let formData = new FormData(myForm);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => formSuccess())
+            .catch((error) => alert(error));
+        };
+
+        document.querySelector("form").addEventListener("submit", handleSubmit);
     </script>
 </body>
 </html>

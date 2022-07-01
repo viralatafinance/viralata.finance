@@ -45,6 +45,12 @@ img, picture {
   /* Track */
   ::-webkit-scrollbar-track {
     background: var(--c1);
+  } .newsletter_body::-webkit-scrollbar {
+    width:initial;
+  } .newsletter_body::-webkit-scrollbar-track {
+    background:white;
+  } .newsletter_body::-webkit-scrollbar-thumb {
+    background:black;
   }
   
   /* Handle */
@@ -1162,11 +1168,11 @@ menu {
     background-attachment: fixed;
     color:#233;
 } .newsletter_body h1 {
-    font-size: clamp(1rem, 5.3vw, 1.8rem);
+    font-size: clamp(1rem, 6.5vw, 1.8rem);
     font-weight: 600;
-    margin: 1rem 0 clamp(0rem, 1vw, 0.4rem);
-    line-height: 1.4;
-    max-width: clamp(12rem, 75vw, 38rem);
+    margin: 1.5rem 0 clamp(0rem, 1vw, 0.6rem);
+    line-height: 1.35;
+    width: clamp(12rem, 74vw, 38rem);
 } .newsletter_body h1 span {
     color: #1e90ff;
 } .newsletter_body main {
@@ -1206,29 +1212,34 @@ menu {
     margin-top: calc(clamp(2.2rem, 11vw, 3.1rem) * -0.8);
 } .return {
     position: fixed;
-    top: 0.8rem;
+    top: 0;
     right: 0;
     left: 0;
     text-align: center;
     display: inline-block;
     background-color: var(--c2);
     width: max-content;
-    color: var(--c1);
-    font-weight: 600;
-    padding: 0.3rem 1rem;
-    border-radius: 3rem;
+    color: #344;
+    font-weight: 400;
+    padding: 0.4rem 1rem;
+    border-radius: 0 0 0.6rem 0.6rem;
     margin: 0 auto;
     border: 0.2rem solid #DDE;
     font-size: 0.95rem;
-    box-shadow: 0 0.2rem 0.4rem #2225;
+    box-shadow: 0 0.3rem 0.4rem -0.2rem #1114;
+    border-top: unset;
 }
 
 
 .newsletter_body form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.8rem;
     width: clamp(12rem, 67vw, 30rem);
+    position: sticky;
+    bottom: 0;
+    background-color: var(--c2);
+    padding: 1rem 0;
 } .newsletter_body label {
     display: flex;
     align-items: center;
@@ -1238,7 +1249,8 @@ menu {
     padding: 0.5rem;
     font-size: 0.9rem;
     width: 100%;
-} .newsletter_body .submit {
+    text-align: center;
+} .newsletter_body .submitBt {
     background-color: var(--c4);
     border: #ffdead;
     color: var(--c2);
