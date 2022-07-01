@@ -1195,6 +1195,7 @@ menu {
     object-fit: cover;
     border-radius: 0.3rem;
     margin: 1rem 0;
+    border: 0.2rem solid #DDE;
 } .newsletter_body .content {
     display: flex;
     flex-direction: column;
@@ -1239,7 +1240,7 @@ menu {
     position: sticky;
     bottom: 0;
     background-color: var(--c2);
-    padding: 1rem 0;
+    padding: 0 0 1.5rem 0;
 } .newsletter_body label {
     display: flex;
     align-items: center;
