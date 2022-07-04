@@ -14,11 +14,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de inscrição | Newsletter Viralata</title>
+    <title>Newsletter Viralata | Inscrição</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/newsletter/favicon.ico" type="image/x-icon">
 
     <meta property="og:url" content="https://viralata.finance">
     <meta property="og:title" content="Viralata | Ecossistema Financeiro Descentralizado do Brasil">
@@ -33,25 +33,25 @@
     <a class="return" href="./index.html">Voltar para a página inicial</a>
 
     <main>
-        <span class="emojis">📧📬👌</span>
-        <h1>Opa, senta aí! Eu pego o ☕ e os petiscos! <span>Bora terminar essa semana bem?</span> 😎</h1>
+        <span class="emojis">📧📬✨</span>
+        <h1>Opa, senta aí! Eu pego o ☕ e os petiscos. <span>Bora terminar essa semana bem?</span> 😎</h1>
 
         <div class="content">
     
-            <p>Vira-lata sabe sempre o que tá rolando por aí. <b>Se tem algo que a gente sente de longe é o cheirinho de informação nova.</b> Na nossa veia corre astúcia, mas aquele que compartilha isso com a matilha é ainda mais astuto. <b>Confia no nosso faro!</b></p>
+            <p>Vira-lata sabe sempre o que tá rolando por aí. <b>Se tem algo que a gente sente de longe é cheirinho de informação nova pelas ruas.</b> Ser esperto é da nossa natureza, mas astuto mesmo é aquele que compartilha isso com a matilha. <b>Confia no nosso faro!</b></p>
 
             <img class="doggo_gif" alt="Doggo da Newsletter" draggable="false">
     
-            <p>Correio Canino é o boletim informativo que traz <strong>notícias sobre variedades, dicas, memes, cripto/DeFi e aquelas infos que você  não quer perder ao longo da semana. Ou seja, a mistura boa que faz o vira-lata!</strong></p>
+            <p>Correio Canino é o boletim informativo que fala <strong>sobre variedades, notícias, dicas, cripto, descentralização, memes e tudo aquilo que você não quer perder ao longo da semana. Ou seja, aquela mistura boa que faz o vira-lata!</strong></p>
 
-            <p>As novidades e todo o conteúdo Viralata resumidos em um e-mail, <strong>de sexta-feira</strong>, pra você. Se inscreve aí, vai? 😁</p>
+            <p>As novidades e todo o conteúdo Viralata resumidos em um e-mail, <strong><span class="color_txt">toda sexta-feira</span></strong>, pra você. Se inscreve aí, vai? 😁</p>
         </div>
 
         <form id="form" name="contact" method="POST" data-netlify="true">
             <p>
-                <label><input type="email" name="email" placeholder="manda-o-seu-email@aqui.com" required/></label>
+                <label><input type="email" name="email" placeholder="coloca-aqui-o-seu@email.com" required/></label>
             </p>
-            <button class="submitBt" type="submit">Me inscrever!</button>
+            <button class="send" type="submit">Tô dentro! 👌</button>
         </form>
 
     </main>
@@ -61,8 +61,8 @@
         const doggoGIF = document.querySelector('.doggo_gif')
         const doggoBG = document.querySelector('.newsletter_body')
 
-        const randomN = Math.floor(Math.random() * 18 + 1);
-        const randomN2 = Math.floor(Math.random() * 18 + 1);
+        const randomN = Math.floor(Math.random() * 22 + 1);
+        const randomN2 = Math.floor(Math.random() * 22 + 1);
 
         doggoGIF.setAttribute('src', `assets/newsletter/doggo${randomN}.gif`)
         doggoBG.style.backgroundImage = `url(assets/newsletter/doggo${randomN2}.gif)`

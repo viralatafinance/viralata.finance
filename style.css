@@ -37,31 +37,25 @@ img, picture {
     display:block;
 }
 
-::-webkit-scrollbar {
+body:not(.newsletter_body)::-webkit-scrollbar {
     width: 5px;
     height:5px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  body:not(.newsletter_body)::-webkit-scrollbar-track {
     background: var(--c1);
-  } .newsletter_body::-webkit-scrollbar {
-    width:initial;
-  } .newsletter_body::-webkit-scrollbar-track {
-    background:white;
-  } .newsletter_body::-webkit-scrollbar-thumb {
-    background:black;
   }
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  body:not(.newsletter_body)::-webkit-scrollbar-thumb {
     background: var(--c3);
   } .timeline_ctnr::-webkit-scrollbar-thumb {
       border-radius: 1rem;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  body:not(.newsletter_body)::-webkit-scrollbar-thumb:hover {
     background: #00eeef;
   }
 
@@ -657,10 +651,13 @@ menu {
     margin-bottom: 1.4rem;
     width: max-content;
     display: inline-flex;
-    flex-direction: column;
+    flex-flow: column wrap-reverse;
     align-items: flex-end;
     visibility: hidden;
     gap: clamp(0.8rem, 3.5vw, 1rem);
+    align-items: flex-start;
+    justify-content: end;
+    top: -75vh;
 } menu a {
     font-size: clamp(0.8rem, 4.8vw, 0.85rem);
     padding: clamp(0.2rem, 2vw, 0.5rem) clamp(0.9rem, 5vw, 1.2rem);
@@ -1170,14 +1167,14 @@ menu {
 } .newsletter_body h1 {
     font-size: clamp(1rem, 6.5vw, 1.8rem);
     font-weight: 600;
-    margin: 1.5rem 0 clamp(0px, 1vw, 0.6rem) 0;
+    padding: 1.5rem 0 clamp(0rem, 1vw, 0.6rem) 0;
     line-height: 1.35;
     width: clamp(12rem, 74vw, 38rem);
 } .newsletter_body h1 span {
     color: #1e90ff;
 } .newsletter_body main {
     width: clamp(14rem, 86vw, 46rem);
-    border-radius: 0.5rem;
+    border-radius: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1189,6 +1186,7 @@ menu {
     margin: 7rem 0;
     background-color: var(--c2);
     border: 0.2rem solid #DDE;
+    box-shadow: 0 clamp(1rem, 3vw, 4rem) clamp(1rem, 6vw, 5rem) var(--c4);
 } .doggo_gif {
     width: clamp(12rem, 85vw, 30rem);
     max-height: 20rem;
@@ -1196,6 +1194,7 @@ menu {
     border-radius: 0.3rem;
     margin: 1rem 0;
     border: 0.2rem solid #DDE;
+    box-sizing: border-box;
 } .newsletter_body .content {
     display: flex;
     flex-direction: column;
@@ -1208,6 +1207,8 @@ menu {
     font-size: clamp(0.85rem, 3rem, 1rem);
 } .newsletter_body .content b {
 
+} .newsletter_body .color_txt {
+    color:#1e90ff;
 } .emojis {
     font-size: clamp(2.2rem, 11vw, 3.1rem);
     margin-top: calc(clamp(2.2rem, 11vw, 3.1rem) * -0.8);
@@ -1241,6 +1242,7 @@ menu {
     bottom: 0;
     background-color: var(--c2);
     padding: 0 0 1.5rem 0;
+    margin: 1rem 0 0 0;
 } .newsletter_body label {
     display: flex;
     align-items: center;
@@ -1251,10 +1253,13 @@ menu {
     font-size: 0.9rem;
     width: 100%;
     text-align: center;
-} .newsletter_body .submitBt {
+    border: 0.2rem solid var(--c5);
+} .newsletter_body form input:focus {
+    outline: unset;
+} .newsletter_body .send {
     background-color: var(--c4);
     border: #ffdead;
-    color: var(--c2);
+    color: var(--c5);
     padding: 0.6rem 0;
     font-size: 1rem;
     cursor: pointer;
