@@ -80,7 +80,7 @@ document.onreadystatechange = function () {
         loadingBg.style.visibility = 'hidden';
         setTimeout(() => {
             menuBt.style.transform = 'translateY(0) rotate(0deg) scale(1)'
-        }, 300);
+        }, 150);
     }
 }
 
