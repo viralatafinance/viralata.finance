@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5NGPDM5');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Viralata | Inscrição</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="assets/newsletter/favicon.ico" type="image/x-icon">
+
+    <meta property="og:url" content="https://viralata.finance">
+    <meta property="og:title" content="Viralata | Ecossistema Financeiro Descentralizado do Brasil">
+    <meta property="og:site_name" content="Viralata">
+    <meta property="og:image" content="https://viralata.finance/og/viralata_finance_og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+</head>
+<body class="newsletter_body">
+
+    <a class="return" href="./index.html">Voltar para a página inicial</a>
+
+    <main>
+        <span class="emojis">📧📬✨</span>
+        <h1>Opa, senta aí! Eu pego o ☕ e os petiscos. <span>Bora terminar essa semana bem?</span> 😎</h1>
+
+        <div class="content">
+    
+            <p>Vira-lata sabe sempre o que tá rolando por aí. <b>Se tem algo que a gente sente de longe é cheirinho de informação nova pelas ruas.</b> Ser esperto é da nossa natureza, mas astuto mesmo é aquele que compartilha isso com a matilha. <b>Confia no nosso faro!</b></p>
+
+            <img class="doggo_gif" alt="Doggo da Newsletter" draggable="false">
+    
+            <p>Correio Canino é o boletim informativo que fala <strong>sobre variedades, notícias, dicas, cripto, descentralização, memes e tudo aquilo que você não quer perder ao longo da semana. Ou seja, aquela mistura boa que faz o vira-lata!</strong></p>
+
+            <p>As novidades e todo o conteúdo Viralata resumidos em um e-mail, <strong><span class="color_txt">toda sexta-feira</span></strong>, pra você. Se inscreve aí, vai? 😁</p>
+        </div>
+
+        <form id="form" name="contact" method="POST" data-netlify="true">
+            <p>
+                <label><input type="email" name="email" placeholder="coloca-aqui-o-seu@email.com" required/></label>
+            </p>
+            <button class="send" type="submit">Tô dentro! 👌</button>
+        </form>
+
+    </main>
+
+
+    <script>
+        const doggoGIF = document.querySelector('.doggo_gif')
+        const doggoBG = document.querySelector('.newsletter_body')
+
+        const randomN = Math.floor(Math.random() * 22 + 1);
+        const randomN2 = Math.floor(Math.random() * 22 + 1);
+
+        doggoGIF.setAttribute('src', `assets/newsletter/doggo${randomN}.gif`)
+        doggoBG.style.backgroundImage = `url(assets/newsletter/doggo${randomN2}.gif)`
+    </script>
+
+    <script>
+        function formSuccess() {
+            const submitBt = document.querySelector('.send');
+
+            setTimeout(() => {
+                submitBt.innerHTML = "Pronto! 🤙"
+            }, 300);
+
+            let allInputs = document.querySelectorAll('input');
+
+            for(i=0;i<allInputs.length;i++) {
+                allInputs[i].value = "";
+                allInputs[i].checked = false;
+            }
+        }
+
+        const handleSubmit = (e) => {
+        e.preventDefault();
+        let myForm = document.getElementById("form");
+        let formData = new FormData(myForm);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => formSuccess())
+            .catch((error) => alert(error));
+        };
+
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+    </script>
+</body>
+</html>
